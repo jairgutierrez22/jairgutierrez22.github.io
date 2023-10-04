@@ -70,10 +70,12 @@ main {
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  border-radius: 5px;
 }
 
 #imagen_producto_grande {
   width: 100%;
+  border-radius: 15px;
 }
 
 .container {
@@ -81,15 +83,46 @@ main {
   justify-content: center;
   margin-top: 20px;
 }
-.container-ver_producto {
+.container-imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-imgs-ver_producto {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
 }
-.container-ver_producto-ropa_producto {
+.container-imgs-ver_producto-ropa_producto {
   margin-right: 10px;
 }
-.container-ver_producto-ropa_producto:hover {
+.container-imgs-ver_producto-ropa_producto:hover {
   opacity: 0.3;
+}
+.container-producto_compra {
+  display: flex;
+  flex-direction: column;
+}
+.container-producto_compra-nombre {
+  margin-top: 5px;
+  align-items: center;
+}
+.container-producto_compra-nombre-descripcion_producto {
+  text-align: center;
+  color: white !important;
+  font-weight: bold;
+}
+.container-producto_compra-selects {
+  margin-top: 5px;
+}
+.container-producto_compra-selects-producto_talla {
+  margin-top: 5px;
+}
+.container-producto_compra-botones {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 2000px) and (min-width: 1435px) {
@@ -135,6 +168,75 @@ main {
   .card-body {
     width: 400px;
   }
+  #imagen_ver_producto {
+    width: 200px !important;
+    height: 200px !important;
+    opacity: 50;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  #imagen_producto_grande {
+    width: 100%;
+    height: 620px;
+    border-radius: 15px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 1800px !important;
+  }
+  .container-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-imgs-ver_producto {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .container-imgs-ver_producto-ropa_producto {
+    margin-bottom: 10px;
+  }
+  .container-imgs-ver_producto-ropa_producto:hover {
+    opacity: 0.3;
+  }
+  .container-producto_compra {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-producto_compra-nombre {
+    align-items: center;
+  }
+  .container-producto_compra-nombre-descripcion_producto {
+    text-align: center;
+    color: white !important;
+    font-weight: bold;
+  }
+  .container-producto_compra-selects {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-producto_compra-selects-producto_talla {
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+  .container-producto_compra-botones {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+  }
+  .container-producto_compra-botones-boton_carrito {
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 1434px) and (min-width: 992px) {
   .container {
@@ -162,6 +264,73 @@ main {
   .container-productos_oferta-ropa_oferta-cards {
     width: 400px;
     height: 750px;
+  }
+  #imagen_ver_producto {
+    width: 200px !important;
+    height: 200px !important;
+    opacity: 50;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+  }
+  #imagen_producto_grande {
+    width: 100%;
+    height: 620px;
+    border-radius: 15px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 1300px;
+  }
+  .container-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-imgs-ver_producto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .container-imgs-ver_producto-ropa_producto {
+    margin-bottom: 10px;
+  }
+  .container-imgs-ver_producto-ropa_producto:hover {
+    opacity: 0.3;
+  }
+  .container-producto_compra {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-producto_compra-nombre {
+    align-items: center;
+  }
+  .container-producto_compra-nombre-descripcion_producto {
+    text-align: center;
+    color: white !important;
+    font-weight: bold;
+  }
+  .container-producto_compra-selects {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-producto_compra-selects-producto_talla {
+    margin-top: 5px;
+    margin-right: 15px;
+  }
+  .container-producto_compra-botones {
+    display: flex;
+    justify-content: end;
+    margin-top: 15px;
+  }
+  .container-producto_compra-botones-boton_carrito {
+    margin-right: 10px;
   }
 }
 

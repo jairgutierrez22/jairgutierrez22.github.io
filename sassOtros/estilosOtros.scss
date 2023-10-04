@@ -74,24 +74,60 @@ main{
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
+    border-radius: 5px;
 }
 
 #imagen_producto_grande{
     width: 100%;
+    border-radius: 15px;
 }
 
 .container{
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    &-ver_producto{
+    &-imgs{
         display: flex;
-        flex-direction: row;
-        &-ropa_producto{
-            margin-right: 10px;
-            &:hover{
-                opacity: 0.3;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-ver_producto{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 10px;
+            &-ropa_producto{
+                margin-right: 10px;
+                &:hover{
+                    opacity: 0.3;
+                }
             }
+        }
+    } 
+
+    &-producto_compra{
+        display: flex;
+        flex-direction: column;
+        &-nombre{
+            margin-top: 5px;
+            align-items: center;
+            &-descripcion_producto{
+                text-align: center;
+                color: white !important;
+                font-weight: bold;
+            }
+        }
+
+        &-selects{
+            margin-top: 5px;
+            &-producto_talla{
+                margin-top: 5px;
+            }
+        }
+
+        &-botones{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5px;
         }
     }
 }
@@ -143,6 +179,83 @@ main{
         }
     }
 
+    //estilos para accesorios.html
+
+#imagen_ver_producto{
+    width: 200px !important;
+    height: 200px !important;
+    opacity: 50;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+#imagen_producto_grande{
+    width: 100%;
+    height: 620px;
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 1800px !important;
+    &-imgs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &-ver_producto{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            &-ropa_producto{
+                margin-bottom: 10px;
+                &:hover{
+                    opacity: 0.3;
+                }
+            }
+        }
+    } 
+
+    &-producto_compra{
+        display: flex;
+        flex-direction: column;
+        &-nombre{
+            align-items: center;
+            &-descripcion_producto{
+                text-align: center;
+                color: white !important;
+                font-weight: bold;
+            }
+        }
+
+        &-selects{
+            display: flex;
+            flex-direction: row;
+            &-producto_talla{
+                margin-top: 5px;
+                margin-right: 15px;
+            }
+        }
+
+        &-botones{
+            display: flex;
+            justify-content: end;
+            margin-top: 15px;
+            &-boton_carrito{
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
   
 }
 
@@ -175,5 +288,81 @@ main{
             }
         }
     }
+
+
+//estilos para accesorios.html
+
+#imagen_ver_producto{
+    width: 200px !important;
+    height: 200px !important;
+    opacity: 50;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+#imagen_producto_grande{
+    width: 100%;
+    height: 620px;
+    border-radius: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 1300px;
+    &-imgs{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        &-ver_producto{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            &-ropa_producto{
+                margin-bottom: 10px;
+                &:hover{
+                    opacity: 0.3;
+                }
+            }
+        }
+    } 
+
+    &-producto_compra{
+        display: flex;
+        flex-direction: column;
+        &-nombre{
+            align-items: center;
+            &-descripcion_producto{
+                text-align: center;
+                color: white !important;
+                font-weight: bold;
+            }
+        }
+
+        &-selects{
+            display: flex;
+            flex-direction: row;
+            &-producto_talla{
+                margin-top: 5px;
+                margin-right: 15px;
+            }
+        }
+
+        &-botones{
+            display: flex;
+            justify-content: end;
+            margin-top: 15px;
+            &-boton_carrito{
+                margin-right: 10px;
+            }
+        }
+    }
+}
   
 }

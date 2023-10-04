@@ -46,36 +46,37 @@
     </header>
     <main>
         <div class="container">
-            <div class="container-ver_producto">    
-                <div class="container-ver_producto-ropa_producto">
-                    <img src="../img/3a.jpeg" id="imagen_ver_producto" alt="producto a comprar">
+            <div class="container-imgs">
+                <div class="container-imgs-ver_producto">    
+                    <div class="container-imgs-ver_producto-ropa_producto">
+                        <img src="../img/3a.jpeg" id="imagen_ver_producto" alt="producto a comprar">
+                    </div>
+                    <div class="container-imgs-ver_producto-ropa_producto">
+                        <img src="../img/2a.jpeg" id="imagen_ver_producto" alt="producto a comprar">
+                    </div>    
+                    <div class="container-imgs-ver_producto-ropa_producto">
+                        <img src="../img/1a.webp" id="imagen_ver_producto" alt="producto a comprar">
+                    </div>
                 </div>
-                <div class="container-ver_producto-ropa_producto">
-                    <img src="../img/2a.jpeg" id="imagen_ver_producto" alt="producto a comprar">
-                </div>    
-                <div class="container-ver_producto-ropa_producto">
-                    <img src="../img/1a.webp" id="imagen_ver_producto" alt="producto a comprar">
+                <div class="container-imgs-imagen_producto">
+                    <img src="../img/11a.jpeg" id="imagen_producto_grande" alt="producto a comprar">
                 </div>
             </div>
-            <div class="imagen_producto">
-                <img src="../img/11a.jpeg" id="imagen_producto_grande" alt="producto a comprar">
-            </div>
-
-            <div class="producto_compra">
-                <div class="producto_nombre">
-                    <p class="descripcion_producto_compra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vitae!</p>
+            <div class="container-producto_compra">
+                <div class="container-producto_compra-nombre">
+                    <p class="container-producto_compra-nombre-descripcion_producto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vitae!</p>
                 </div>
-                <div class="selects">
-                    <div class="producto_talla">
-                        <select name="" id="">
+                <div class="container-producto_compra-selects">
+                    <div class="container-producto_compra-selects-producto_talla">
+                          <select class="form-select">
                             <option value="">Seleccione la talla</option>
                             <option value="Talla S">Talla S</option>
                             <option value="Talla M">Talla M</option>
                             <option value="Talla L">Talla L</option>
                         </select>
                     </div>
-                    <div class="producto_talla">
-                        <select name="" id="">
+                    <div class="container-producto_compra-selects-producto_talla">
+                        <select class="form-select">
                             <option value="">Seleccione la color</option>
                             <option value="color rojo">Color: rojo</option>
                             <option value="color azul">Color: azul</option>
@@ -84,12 +85,13 @@
                         </select>
                     </div>
                 </div>
-                <div class="botones">
-                    <div class="boton_carrito_producto">
-                        <button id="boton_aniadir">Añadir al carrito</button>
+                <div class="container-producto_compra-botones">
+                    <div class="container-producto_compra-botones-boton_carrito">
+                        <button type="button" class="btn btn-dark">Añadir al carrito</button>
                     </div>
-                    <div class="boton_comprar_producto">
-                        <a href="oagCinco.html" id="boton_comprar">Comprar</a>
+                    <div class="container-producto_compra-botones-boton_comprar">
+                        <a class="btn btn-success link">Comprar</a>
+                        <!--<a href="oagCinco.html" id="boton_comprar">Comprar</a>-->
                     </div>
                 </div>
             </div>
