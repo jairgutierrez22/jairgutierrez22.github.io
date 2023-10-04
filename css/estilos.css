@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 43, 43) !important;
+}
+
+#imagenes_destacadas {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.container-cards-cardUno-cardFoto-cardss-imagen {
+  width: 100%;
+}
+.container-imagenes-carou {
+  border-radius: 10px !important;
+}
+
+.carousel-inner {
+  border-radius: 10px !important;
+}
+
+main {
+  margin-bottom: 10px !important;
+}
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-fotos_ropa_productos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-fotos_ropa_productos-ropa_prod_uno {
+  width: 450px;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.container-fotos_ropa_productos-texto_prod {
+  text-align: center;
+  color: rgb(0, 0, 0) !important;
+  font-size: 18px;
+}
+.container-navegacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: inherit !important;
+  justify-content: center !important;
+  margin-top: 10px;
+}
+.container .list-group {
+  display: flex;
+  flex-direction: row;
+}
+.container .list-group-item {
+  margin-right: 5px;
+}
+.container .list-group-item:hover {
+  background-color: rgb(216, 211, 211);
+}
+
+#imagen_prod_uno {
+  width: 450px;
+}
+
+#imagen_prod_dos {
+  width: 450px;
+}
+
+#imagen_prod_tres {
+  width: 450px;
+}
+
+#imagen_prod_cuatro {
+  width: 450px;
+}
+
+@media screen and (max-width: 2000px) and (min-width: 1435px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1650px !important;
+  }
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    margin-top: 30px;
+  }
+  .container-imagenes-carou {
+    width: 680px;
+  }
+  #imagen_prod_uno {
+    width: 350px;
+  }
+  #imagen_prod_dos {
+    width: 350px;
+  }
+  #imagen_prod_tres {
+    width: 350px;
+  }
+  #imagen_prod_cuatro {
+    width: 350px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container-fotos_ropa_productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-fotos_ropa_productos-ropa_prod_uno {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .container-fotos_ropa_productos-texto_prod {
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+    font-size: 18px;
+  }
+  .container-navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: inherit !important;
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1434px) and (min-width: 1200px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin-top: 30px;
+  }
+  .container-imagenes-carou {
+    width: 550px;
+  }
+  #imagen_prod_uno {
+    width: 350px;
+  }
+  #imagen_prod_dos {
+    width: 350px;
+  }
+  #imagen_prod_tres {
+    width: 350px;
+  }
+  #imagen_prod_cuatro {
+    width: 350px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container-fotos_ropa_productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-fotos_ropa_productos-ropa_prod_uno {
+    width: 350px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .container-fotos_ropa_productos-texto_prod {
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+    font-size: 18px;
+  }
+  .container-navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: inherit !important;
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 770px) and (min-width: 0px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container-fotos_ropa_productos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .container-fotos_ropa_productos-ropa_prod_uno {
+    width: 450px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+  .container-fotos_ropa_productos-texto_prod {
+    text-align: center;
+    color: rgb(0, 0, 0) !important;
+    font-size: 18px;
+  }
+  .container-navegacion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: inherit !important;
+    justify-content: center !important;
+    margin-top: 10px;
+  }
+  .container .list-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 190px;
+  }
+  .container .list-group-item {
+    margin-top: 5px;
+  }
+  .container .list-group-item:hover {
+    background-color: rgb(216, 211, 211);
+  }
+  #imagen_prod_uno {
+    width: 450px;
+  }
+  #imagen_prod_dos {
+    width: 450px;
+  }
+  #imagen_prod_tres {
+    width: 450px;
+  }
+  #imagen_prod_cuatro {
+    width: 450px;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

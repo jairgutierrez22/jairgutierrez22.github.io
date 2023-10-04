@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(243, 43, 43) !important;
+}
+
+
+//pie de pagina
+footer{
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px !important;
+}
+
+#imagen_productos_oferta{
+    height: 100%;
+    width: 400px;
+}
+
+#imagen_productos_oferta-foto{
+    height: 750px !important;
+    width: 100%;
+}
+
+main{
+    margin-bottom: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &-mapa_tienda{
+        width: 400px !important;
+        &-iframe_mapa{
+            width: 400px !important;
+            height: 250px;
+        }
+    }
+    &-productos_oferta{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &-ropa_oferta{
+            margin-top: 20px;
+            &-cards{
+                width: 400px;
+                height: 750px;
+            }
+        }
+    }
+}
+
+.card-title{
+    text-align: center;
+}
+
+//estilos para accesorios.html
+
+#imagen_ver_producto{
+    width: 150px !important;
+    height: 150px !important;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+#imagen_producto_grande{
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    &-ver_producto{
+        display: flex;
+        flex-direction: row;
+        &-ropa_producto{
+            margin-right: 10px;
+            &:hover{
+                opacity: 0.3;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 2000px) and (min-width: 1435px) {
+
+    #imagen_productos_oferta{
+        height: 100%;
+        width: 200px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        max-width: 1850px !important;
+        &-mapa_tienda{
+            width: 820px !important;
+            &-iframe_mapa{
+                width: 820px !important;
+                height: 250px;
+            }
+        }
+        &-productos_oferta{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &-ropa_oferta{
+                margin-top: 20px;
+                margin-right: 20px;
+                &-cards{
+                    display: flex;
+                    flex-direction: row !important;
+                    width: 800px;
+                    height: 350px;
+                }
+            }
+        }
+    } 
+
+    .card{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        &-body{
+            width: 400px;
+        }
+    }
+
+  
+}
+
+
+@media screen and (max-width: 1434px) and (min-width: 992px) {
+
+    .container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &-mapa_tienda{
+            width: 820px !important;
+            &-iframe_mapa{
+                width: 820px !important;
+                height: 250px;
+            }
+        }
+        &-productos_oferta{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            &-ropa_oferta{
+                margin-top: 20px;
+                margin-right: 20px;
+                &-cards{
+                    width: 400px;
+                    height: 750px;
+                }
+            }
+        }
+    }
+  
+}

@@ -1,0 +1,251 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: rgb(243, 43, 43) !important;
+}
+
+header{
+    width: 100%;
+}
+
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.fotos_destacadas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 50px;
+}
+
+.ropa_destacada_uno{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.ropa_destacada_uno_foto{
+    width: 400px !important;
+    height: 300px !important;
+}
+.ropa_destacada_uno_texto{
+    width: 340px !important;
+}
+
+.cards_fotos{
+    width: 700px;
+    border-radius: 10px !important;
+}
+
+.texto_destacado_uno{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    font-size: 18px;
+    color: black;
+}
+
+.ropa_destacada_dos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#imagen_destacada_uno{
+    width: 100% !important;
+    height: 300px !important;
+}
+
+#imagen_destacada_dos{
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.texto_destacado_dos{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    font-size: 18px;
+    color: black;
+}
+
+.cards_dest{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 100px;
+}
+
+#carousel_uno{
+    width: 300px;
+}
+
+#carousel_dos{
+    width: 300px;
+}
+
+#carousel_tres{
+    width: 300px;
+}
+
+.imagenes{
+    width: 800px;
+    height: 600px;
+    padding-right: 80px;
+}
+
+#imagen_logo{
+    width: 100px;
+    height: 80px;
+}
+
+
+.fotos_ropa_productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.ropa_prod_uno{
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.ropa_prod_dos{
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.ropa_prod_tres{
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.ropa_prod_cuatro{
+    width: 380px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#imagen_prod_uno{
+    width: 350px;
+}
+
+#imagen_prod_dos{
+    width: 350px;
+}
+
+#imagen_prod_tres{
+    width: 350px;
+}
+
+#imagen_prod_cuatro{
+    width: 350px;
+}
+
+.texto_prod{
+    text-align: center;
+    color: black !important;
+    font-size: 18px;
+}
+
+.navegacion_ropa{
+    margin-top: 170px !important;
+    margin-bottom: 90px;
+}
+
+.list_ropa{
+    margin-top: 10px;
+}
+
+ul ol li a{
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    margin-top: 150px;
+    margin-top: 10px;
+}
+
+ul ol li a:hover{
+    color: rgb(230, 220, 220);
+}
+
+
+footer{
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 800px) and (min-width: 0px) {
+
+  .cards_dest{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ropa_destacada_uno{
+    margin-right: 10px;
+  }
+
+
+}
