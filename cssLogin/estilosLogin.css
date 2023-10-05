@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 43, 43) !important;
+}
+
+footer {
+  background-color: black;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container-info_entrega {
+  display: none;
+}
+.container-form {
+  margin-top: 200px;
+}
+.container-form-formLogin {
+  background-color: white;
+  border-radius: 10px;
+}
+.container-form-formLogin-forms {
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.container-cont_accesorios {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-cont_accesorios-titulo {
+  text-align: center;
+  color: white;
+}
+.container-cont_accesorios-group-cards {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1994px) and (min-width: 992px) {
+  #fotos_accesorios {
+    max-width: 400px;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 20px;
+  }
+  .container-cont_accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 1300px;
+  }
+  .container-cont_accesorios-titulo {
+    text-align: center;
+    color: white;
+  }
+  .container-cont_accesorios-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .container-cont_accesorios-group-cards {
+    margin-right: 11px;
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=estilosLogin.css.map */

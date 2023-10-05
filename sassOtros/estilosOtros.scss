@@ -63,7 +63,7 @@ main{
     text-align: center;
 }
 
-//estilos para accesorios.html
+//estilos para carrito.html
 
 #imagen_ver_producto{
     width: 150px !important;
@@ -131,6 +131,20 @@ main{
         }
     }
 }
+
+
+//accesorios
+
+.accesorios_cards{
+    margin-right: 10px !important;
+}
+
+.card-title{
+    display: flex;
+    justify-content: center;
+}
+
+
 
 
 @media screen and (max-width: 2000px) and (min-width: 1435px) {
@@ -256,6 +270,29 @@ main{
     }
 }
 
+
+.containerr{
+    display: flex;
+    margin-top: 250px !important;
+    max-width: 1300px !important;
+    background-color: aqua;
+    &-cont_accesorios{
+        background-color: black;
+        &-group{
+            margin-top: 100px !important;
+        }
+    }
+}
+
+
+/*
+#fotos_accesorios{
+    width: 200px !important;
+}
+
+.accesorios_cards{
+    max-width: 400px !important;
+}*/
   
 }
 
