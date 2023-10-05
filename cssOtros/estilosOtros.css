@@ -7,7 +7,7 @@ body {
 }
 
 footer {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.973);
   bottom: 0;
   width: 100%;
   position: fixed;
@@ -125,6 +125,15 @@ main {
   margin-top: 5px;
 }
 
+.accesorios_cards {
+  margin-right: 10px !important;
+}
+
+.card-title {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (max-width: 2000px) and (min-width: 1435px) {
   #imagen_productos_oferta {
     height: 100%;
@@ -237,6 +246,26 @@ main {
   .container-producto_compra-botones-boton_carrito {
     margin-right: 10px;
   }
+  .containerr {
+    display: flex;
+    margin-top: 250px !important;
+    max-width: 1300px !important;
+    background-color: aqua;
+  }
+  .containerr-cont_accesorios {
+    background-color: black;
+  }
+  .containerr-cont_accesorios-group {
+    margin-top: 100px !important;
+  }
+  /*
+  #fotos_accesorios{
+      width: 200px !important;
+  }
+
+  .accesorios_cards{
+      max-width: 400px !important;
+  }*/
 }
 @media screen and (max-width: 1434px) and (min-width: 992px) {
   .container {

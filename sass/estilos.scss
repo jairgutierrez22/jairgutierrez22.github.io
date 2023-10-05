@@ -3,12 +3,14 @@
 }
 
 body{
-    background-color: rgb(243, 43, 43) !important;
+    background-color: rgb(177, 60, 60) !important;
 }
 
 //imagenes index
 #imagenes_destacadas{
     width: 100%;
+
+    
 }
 
 .container{
@@ -48,7 +50,7 @@ main{
 
 //pie de pagina
 footer{
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.952);
     bottom: 0;
     width: 100%;
     position: fixed;
@@ -78,9 +80,10 @@ footer{
             align-items: center;
             background-color: rgb(16, 49, 238);
             margin-bottom: 10px;
-            margin-right: 10px;
+            margin-right: 10px;       
+            
             border-radius: 10px;
-            margin-top: 10px;
+            margin-top: 10px; 
         }
         &-texto_prod{
             text-align: center;
