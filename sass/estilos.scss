@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     margin-top: 20px;
+    margin-bottom: 20px;
     &-cards{
         
         &-cardUno{
@@ -68,7 +69,7 @@ footer{
         flex-direction: row; 
         justify-content: center;
         &-ropa_prod_uno{
-            width: 450px;
+            width: 420px;
             height: 600px;
             display: flex;
             flex-wrap: wrap;
@@ -107,19 +108,19 @@ footer{
 }
 
 #imagen_prod_uno{
-    width: 450px;
+    width: 420px;
 }
 
 #imagen_prod_dos{
-    width: 450px;
+    width: 420px;
 }
 
 #imagen_prod_tres{
-    width: 450px;
+    width: 420px;
 }
 
 #imagen_prod_cuatro{
-    width: 450px;
+    width: 420px;
 }
 
 
