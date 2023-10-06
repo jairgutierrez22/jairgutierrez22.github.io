@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: rgb(0, 0, 0) !important;
+    background-color: rgb(243, 43, 43) !important;
 }
 
 //imagenes index
@@ -50,7 +50,7 @@ main{
 
 //pie de pagina
 footer{
-    background-color: rgba(0, 0, 0, 0.952);
+    background-color: rgb(0, 0, 0);
     bottom: 0;
     width: 100%;
     position: fixed;
@@ -61,7 +61,7 @@ footer{
 }
 
 //estilos para archivo ropa-accesorios/ropa.html
-.container{
+.containerropa{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
@@ -71,14 +71,14 @@ footer{
         flex-direction: row; 
         justify-content: center;
         &-ropa_prod_uno{
-            width: 420px;
+            width: 390px;
             height: 600px;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgb(16, 49, 238);
+            background-color: rgb(255, 255, 255);
             margin-bottom: 10px;
             margin-right: 10px;       
             
@@ -111,19 +111,19 @@ footer{
 }
 
 #imagen_prod_uno{
-    width: 420px;
+    width: 390px;
 }
 
 #imagen_prod_dos{
-    width: 420px;
+    width: 390px;
 }
 
 #imagen_prod_tres{
-    width: 420px;
+    width: 390px;
 }
 
 #imagen_prod_cuatro{
-    width: 420px;
+    width: 390px;
 }
 
 
@@ -164,10 +164,11 @@ footer{
     #imagen_prod_cuatro{
         width: 350px;
     }
-    .container{
+    .containerropa{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;    
+        justify-content: center;
         &-fotos_ropa_productos{
             display: flex;
             flex-wrap: wrap;
@@ -245,7 +246,7 @@ footer{
     #imagen_prod_cuatro{
         width: 350px;
     }
-    .container{
+    .containerropa{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;    
@@ -289,8 +290,35 @@ footer{
 
 
 @media screen and (max-width: 770px) and (min-width: 0px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        &-cards{
+            
+            &-cardUno{
+                &-cardFoto{
+                    &-cardss{
+                        &-imagen{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        &-imagenes{
+            &-carou{
+                border-radius: 10px !important;
+            }
+        }
+    
+    }
+
+
     //estilos para archivo ropa-accesorios/ropa.html
-.container{
+.containerropa{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;    
@@ -300,7 +328,7 @@ footer{
         flex-direction: row; 
         justify-content: center;
         &-ropa_prod_uno{
-            width: 450px;
+            width: 420px;
             height: 600px;
             display: flex;
             flex-wrap: wrap;
@@ -341,18 +369,18 @@ footer{
 }
 
 #imagen_prod_uno{
-    width: 450px;
+    width: 420px;
 }
 
 #imagen_prod_dos{
-    width: 450px;
+    width: 420px;
 }
 
 #imagen_prod_tres{
-    width: 450px;
+    width: 420px;
 }
 
 #imagen_prod_cuatro{
-    width: 450px;
+    width: 420px;
 }
 }

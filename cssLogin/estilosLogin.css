@@ -1,13 +1,73 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: rgb(243, 43, 43) !important;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
 }
 
+.containerRegister {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerRegister-forms {
+  width: 400px !important;
+}
+.containerRegister-forms-body {
+  width: 400px !important;
+}
+
+/* Estilos generales */
+h1, h2, h3 {
+  font-weight: bold;
+  color: white;
+}
+
+h1 {
+  font-size: 24px;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+}
+
+h3 {
+  font-size: 18px;
+  color: white;
+}
+
+p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+ul {
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Estilos específicos para la política de privacidad */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Estilos para hacer responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
 footer {
-  background-color: rgba(0, 0, 0, 0.959);
+  background-color: black;
   bottom: 0;
   width: 100%;
   position: fixed;
@@ -17,21 +77,21 @@ footer {
   margin-top: 10px !important;
 }
 
-.container {
+.containerFormss {
   display: flex;
   flex-direction: column;
 }
-.container-info_entrega {
+.containerFormss-info_entrega {
   display: none;
 }
-.container-form {
+.containerFormss-form {
   margin-top: 200px;
 }
-.container-form-formLogin {
-  background-color: white;
+.containerFormss-form-formLogin {
+  background-color: rgb(90, 44, 44);
   border-radius: 10px;
 }
-.container-form-formLogin-forms {
+.containerFormss-form-formLogin-forms {
   border-radius: 10px;
 }
 
@@ -55,6 +115,28 @@ footer {
   margin-bottom: 10px;
 }
 
+@media screen and (max-width: 800px) and (min-width: 0px) {
+  body {
+    background-color: blue;
+  }
+  .containerFormss {
+    display: flex;
+    flex-direction: column;
+  }
+  .containerFormss-info_entrega {
+    display: none;
+  }
+  .containerFormss-form {
+    margin-top: 200px;
+  }
+  .containerFormss-form-formLogin {
+    border-radius: 10px;
+  }
+  .containerFormss-form-formLogin-forms {
+    border-radius: 10px;
+    background-color: rgb(90, 44, 44);
+  }
+}
 @media screen and (max-width: 1994px) and (min-width: 992px) {
   #fotos_accesorios {
     max-width: 400px;
