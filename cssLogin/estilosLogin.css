@@ -169,6 +169,18 @@ footer {
     margin-right: 11px;
     max-width: 400px;
   }
+  .containerFormss-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .containerFormss-form-formLogin {
+    width: 800px !important;
+  }
+  .containerFormss-form-formLogin-forms {
+    width: 800px !important;
+  }
 }
 
 /*# sourceMappingURL=estilosLogin.css.map */
