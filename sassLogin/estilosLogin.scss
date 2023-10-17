@@ -11,7 +11,15 @@ body{
     line-height: 1.6;
     margin: 20px;
 }
-               
+
+.cardtitle{
+    text-align: center;
+}
+
+.parrafo_cards{
+    color: black;
+}
+
 .containerRegister{
     display: flex;
     justify-content: center;
@@ -113,6 +121,24 @@ footer{
     }
 }
 
+//estilos para politicas
+.container{
+
+    &-bar{
+        width: 0;
+        height: 100%;
+        box-shadow: 0 0 5px rgb(48, 0, 0);
+        background: rgb(0, 0, 0);
+        
+        animation: resize auto linear forwards;
+        animation-timeline: scroll(root block);
+          
+        @keyframes resize {
+        from { width: 0% } /* Se puede omitir */
+        to { width: 100% }
+        }
+    }
+}
 
 
 .container{

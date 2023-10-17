@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/jpg" href="../img/logo.jpeg"/>
-    <link rel="stylesheet" href="../cssOtros/estilosOtros.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -35,7 +35,7 @@
                             <a class="nav-link" href="../otros/ofertas.html">Ofertas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../otrosPag/politicas.html">Políticas</a>
+                            <a class="nav-link" href="../otrosPag/politicas.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../otros/login.html">Login</a>
@@ -47,49 +47,73 @@
     </header>
     <main>
         <div class="container">
+            <div class="container-titleOfertas">
+                <h1>Las mejores ofertas para todos los deportes.</h1>
+            </div>
             <div class="container-mapa_tienda mt-3">    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30978904.83534784!2d-95.6581964482176!3d18.591856844475675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cb759f13095%3A0xb6c7ee346c36ec5b!2sTime%20Square!5e0!3m2!1ses!2sco!4v1693882050388!5m2!1ses!2sco" 
-                        class="container-mapa_tienda-iframe_mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30978904.83534784!2d-95.6581964482176!3d18.591856844475675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cb759f13095%3A0xb6c7ee346c36ec5b!2sTime%20Square!5e0!3m2!1ses!2sco!4v1693882050388!5m2!1ses!2sco" 
+                            class="container-mapa_tienda-iframe_mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+                <div class="container-mapa_tienda-title_mapa">
+                    <h4>Siguiendo este mapa, podrás encontrar nuestra tienda física para que vayas y nos conozcas.</h4>
+                </div>
                 
             </div>
             <div class="container-productos_oferta">    
                 <div class="container-productos_oferta-ropa_oferta">
                     <div class="card container-productos_oferta-ropa_oferta-cards">
-                        <img  src="../img/escalar.jpeg" id="imagen_productos_oferta" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ofertas en Productos para Escalar</h5>
-                            <p class="card-text">Consigue grandes ofertas para que inicies tu vida como un gran Escalador</p>
-                            <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                        <img  src="../img/escalar.jpeg" id="imagen_productos_ofertaaa" class="card-img-top" alt="...">
+                        <div class="card-body container-productos_oferta-ropa_oferta-cards-imcard">
+                            <div class="carbody_ofertas container-productos_oferta-ropa_oferta-cards-imcard-card_oferta">
+                                <h5 class="card-title">Ofertas en Productos para Escalar</h5>
+                                <p class="card-text">Consigue grandes ofertas para que inicies tu vida como un gran Escalador</p>
+                            </div>
+                            <div class="cardbtn_ofertas">
+                                <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container-productos_oferta-ropa_oferta">
                     <div class="card container-productos_oferta-ropa_oferta-cards">
                         <img  src="../img/basket.jpeg" id="imagen_productos_oferta" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ofertas en productos de Baloncesto</h5>
-                            <p class="card-text">Descuentos y ofertas en los mejores productos para baloncesto.</p>
-                            <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                        <div class="card-body container-productos_oferta-ropa_oferta-cards-imcard">
+                            <div class="carbody_ofertas container-productos_oferta-ropa_oferta-cards-imcard-card_oferta">
+                                <h5 class="card-title">Ofertas en productos de Baloncesto</h5>
+                                <p class="card-text">Descuentos y ofertas en los mejores productos para baloncesto.</p>
+                            </div>
+                            <div class="cardbtn_ofertas">
+                                <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                            </div>
                         </div>
                     </div>
-                </div>    
+                </div>     
                 <div class="container-productos_oferta-ropa_oferta">
                     <div class="card container-productos_oferta-ropa_oferta-cards">
-                        <img  src="../img/tshirt.webp" id="imagen_productos_oferta" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ofertas en Productos para Entrenar Fuera de Casa</h5>
-                            <p class="card-text">Quieres empezar tu vida fit ya? Esta es la señal, con nuestros descuentos en productos para entrenar.</p>
-                            <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                        <img  src="../img/tshirt.webp" id="imagen_productos_ofertaa" class="card-img-top" alt="...">
+                        <div class="card-body container-productos_oferta-ropa_oferta-cards-imcard">
+                            <div class="carbody_ofertas container-productos_oferta-ropa_oferta-cards-imcard-card_oferta">
+                                <h5 class="card-title">Ofertas en Productos para Entrenar Fuera de Casa</h5>
+                                <p class="card-text">Quieres empezar tu vida fit ya? Esta es la señal, con nuestros descuentos en productos para entrenar.</p>
+                            </div>
+                            <div class="cardbtn_ofertas">
+                                <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container-productos_oferta-ropa_oferta">
                     <div class="card container-productos_oferta-ropa_oferta-cards">
                         <img  src="../img/2a.jpeg" id="imagen_productos_oferta" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ofertas en Productos para Entrenar en Casa</h5>
-                            <p class="card-text">Te gusta salir a entrenar, llévate los mejores productos en oferta.</p>
-                            <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                        <div class="card-body container-productos_oferta-ropa_oferta-cards-imcard">
+                            <div class="carbody_ofertas container-productos_oferta-ropa_oferta-cards-imcard-card_oferta">
+                                <h5 class="card-title">Ofertas en Productos para Entrenar en Casa</h5>
+                                <p class="card-text">Te gusta salir a entrenar, llévate los mejores productos en oferta.</p>
+                            </div>
+                            <div class="cardbtn_ofertas">
+                                <a class="btn btn-danger" href="../compra/carrito.html">Comprar</a>
+                            </div>
                         </div>
                     </div>
                 </div>

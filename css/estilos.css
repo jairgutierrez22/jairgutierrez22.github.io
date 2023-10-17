@@ -1,26 +1,86 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: rgb(243, 43, 43) !important;
+  padding: 0px !important;
+  margin: 0px !important;
 }
 
-#imagenes_destacadas {
+#stickAviso {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-seccionArriba {
+  position: relative;
   width: 100%;
+  height: 250px;
+  overflow: hidden;
+  padding-bottom: 10%;
+  background-color: rgb(245, 242, 242);
+}
+.banner-seccionArriba-textos {
+  margin-top: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container-title_marcas {
+  text-align: center;
+  color: white;
+  padding-bottom: 10px !important;
+}
+.container-cardsMarcas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.container-cardsMarcas-cards {
+  height: 450px;
+  width: 200px;
+  margin-right: 20px;
+  border-radius: 10px !important;
+  margin-bottom: 10px;
+  text-decoration: none !important;
+  color: black;
+}
+.container-cardsMarcas-cards-title {
+  text-align: center;
+}
+.container-seccionAbajo {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
-.container-cards-cardUno-cardFoto-cardss-imagen {
+.container-seccionAbajo-cards {
+  display: flex;
+  flex-direction: column;
+}
+.container-seccionAbajo-cards-cardUno {
+  margin-bottom: 10px;
+}
+.container-seccionAbajo-cards-cardUno-cardFoto-cardss-imagen {
   width: 100%;
 }
-.container-imagenes-carou {
+.container-seccionAbajo-imagenes {
+  padding-bottom: 20px !important;
+}
+.container-seccionAbajo-imagenes-carou {
   border-radius: 10px !important;
 }
 
@@ -30,6 +90,22 @@ body {
 
 main {
   margin-bottom: 10px !important;
+}
+
+#imagenes_destacadas {
+  width: 100%;
+}
+
+#fotos_marcass_index {
+  height: 385px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px !important;
+}
+
+#fotos_marcas_index {
+  height: 400px;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px !important;
 }
 
 footer {
@@ -43,55 +119,54 @@ footer {
   margin-top: 10px !important;
 }
 
-.containerropa {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.containerropa-fotos_ropa_productos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-}
-.containerropa-fotos_ropa_productos-ropa_prod_uno {
-  width: 390px;
-  height: 600px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 10px;
-  margin-right: 10px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-.containerropa-fotos_ropa_productos-texto_prod {
-  text-align: center;
-  color: rgb(0, 0, 0) !important;
-  font-size: 18px;
-}
-.containerropa-navegacion {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: inherit !important;
-  justify-content: center !important;
-  margin-top: 10px;
-}
-.containerropa .list-group {
-  display: flex;
-  flex-direction: row;
-}
-.containerropa .list-group-item {
-  margin-right: 5px;
-}
-.containerropa .list-group-item:hover {
-  background-color: rgb(216, 211, 211);
-}
+/*.containerropa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    &-fotos_ropa_productos{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        justify-content: center;
+        &-ropa_prod_uno{
+            width: 390px;
+            height: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            margin-bottom: 10px;
+            margin-right: 10px;       
 
+            border-radius: 10px;
+            margin-top: 10px; 
+        }
+        &-texto_prod{
+            text-align: center;
+            color: rgb(0, 0, 0) !important;
+            font-size: 18px;
+        }
+    }
+    &-navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        align-items: inherit !important;
+        justify-content: center !important;
+        margin-top: 10px;
+    }
+    .list-group{display: flex;
+        flex-direction: row;
+        &-item{
+            margin-right: 5px;
+            &:hover{
+                background-color: rgb(216, 211, 211);
+            }
+        }
+    }
+}*/
 #imagen_prod_uno {
   width: 390px;
 }
@@ -108,216 +183,585 @@ footer {
   width: 390px;
 }
 
-@media screen and (max-width: 2000px) and (min-width: 1435px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1650px !important;
-  }
-  .container-cards {
-    display: flex;
-    flex-direction: column;
-    width: 680px;
-    margin-top: 30px;
-  }
-  .container-imagenes-carou {
-    width: 680px;
-  }
-  #imagen_prod_uno {
-    width: 350px;
-  }
-  #imagen_prod_dos {
-    width: 350px;
-  }
-  #imagen_prod_tres {
-    width: 350px;
-  }
-  #imagen_prod_cuatro {
-    width: 350px;
-  }
-  .containerropa {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .containerropa-fotos_ropa_productos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .containerropa-fotos_ropa_productos-ropa_prod_uno {
-    width: 350px;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  .containerropa-fotos_ropa_productos-texto_prod {
-    text-align: center;
-    color: rgb(0, 0, 0) !important;
-    font-size: 18px;
-  }
-  .containerropa-navegacion {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: inherit !important;
-    justify-content: center !important;
-    margin-top: 10px;
-  }
+.container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media screen and (max-width: 1434px) and (min-width: 1200px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .container-cards {
-    display: flex;
-    flex-direction: column;
-    width: 550px;
-    margin-top: 30px;
-  }
-  .container-imagenes-carou {
-    width: 550px;
-  }
-  #imagen_prod_uno {
-    width: 350px;
-  }
-  #imagen_prod_dos {
-    width: 350px;
-  }
-  #imagen_prod_tres {
-    width: 350px;
-  }
-  #imagen_prod_cuatro {
-    width: 350px;
-  }
-  .containerropa {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .containerropa-fotos_ropa_productos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .containerropa-fotos_ropa_productos-ropa_prod_uno {
-    width: 350px;
-    height: 600px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  .containerropa-fotos_ropa_productos-texto_prod {
-    text-align: center;
-    color: rgb(0, 0, 0) !important;
-    font-size: 18px;
-  }
-  .containerropa-navegacion {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: inherit !important;
-    justify-content: center !important;
-    margin-top: 10px;
-  }
+.container-title_ropa {
+  align-items: center;
+  justify-content: center;
+  text-align: center !important;
+  background-color: white !important;
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  margin-bottom: 20px;
 }
-@media screen and (max-width: 770px) and (min-width: 0px) {
+.container-fotos_ropa-cards {
+  position: relative;
+  width: 310px; /* O ajusta el ancho según tus necesidades */
+  height: 500px; /* O ajusta la altura según tus necesidades */
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.container-fotos_ropa-cards-content-blue {
+  transition: filter 0.3s ease-in-out;
+}
+.container-fotos_ropa-cards-content :hover {
+  filter: blur(8px);
+}
+.container-fotos_ropa-cards-overlay {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 18px;
+}
+.container-fotos_ropa-cards-overlayy {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 18px;
+}
+
+#fotos_ropa {
+  height: 500px;
+  border-radius: 10px;
+}
+
+#cardsropa {
+  background-color: transparent;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.container-cont_accesorios {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-cont_accesorios-titulo {
+  text-align: center;
+  color: white;
+}
+.container-cont_accesorios-group-cards {
+  margin-bottom: 10px;
+}
+
+#imagen_productos_oferta {
+  height: 600px !important;
+  width: 400px;
+}
+
+#imagen_productos_ofertaaa {
+  height: 580px !important;
+  width: 400px;
+}
+
+#imagen_productos_ofertaa {
+  height: 560px !important;
+  width: 400px;
+}
+
+.btn {
+  border: 10px !important;
+  border-color: black !important;
+  border-radius: 10px !important;
+  font-size: 20px;
+  background-color: rgb(0, 0, 0) !important;
+  padding: 10px !important;
+  font-weight: bold !important;
+}
+.btn:hover {
+  border: 5px !important;
+  border-color: black !important;
+  background-color: rgb(187, 183, 183) !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.cardbtn_ofertas {
+  align-items: center !important;
+  display: flex;
+  float: right;
+}
+
+#imagen_productos_oferta-foto {
+  height: 750px !important;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container-titleOfertas {
+  color: white;
+  text-align: center;
+}
+.container-mapa_tienda {
+  width: 400px !important;
+}
+.container-mapa_tienda-iframe_mapa {
+  width: 400px !important;
+  height: 250px;
+}
+.container-mapa_tienda-title_mapa {
+  color: white;
+  text-align: center;
+}
+.container-productos_oferta {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-productos_oferta-ropa_oferta {
+  margin-top: 20px;
+}
+.container-productos_oferta-ropa_oferta-cards {
+  width: 400px;
+  height: 750px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: rgb(79, 18, 221) !important;
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  #fotos_marcass {
+    height: 385px;
+    width: 180px;
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  #fotos_marcas {
+    height: 400px;
+    width: 180px;
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  #img_carou {
+    height: 300px;
+  }
+  #fotos_marcass_index {
+    height: 385px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  #fotos_marcas_index {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px !important;
+  }
+  #imagenes_destacadas {
+    height: 300px;
+  }
   .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
-  .container-cards-cardUno-cardFoto-cardss-imagen {
+  .container-title_marcas {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px !important;
+  }
+  .container-cardsMarcas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container-cardsMarcas-cards {
+    height: 450px;
+    width: 183px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+  }
+  .container-seccionAbajo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container-seccionAbajo-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container-seccionAbajo-cards-cardUno {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .container-seccionAbajo-cards-cardUno-cardFoto {
+    width: 400px !important;
+  }
+  .container-seccionAbajo-cards-cardUno-cardFoto-cardss-imagen {
     width: 100%;
   }
-  .container-imagenes-carou {
-    border-radius: 10px !important;
-  }
-  .containerropa {
+  .container-seccionAbajo-imagenes {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-bottom: 20px !important;
+    width: 500px !important;
   }
-  .containerropa-fotos_ropa_productos {
+  .container-seccionAbajo-imagenes-carouselImg {
+    width: 500px;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
   }
-  .containerropa-fotos_ropa_productos-ropa_prod_uno {
-    width: 420px;
-    height: 600px;
+  .container-seccionAbajo-imagenes-carouselImg-carou {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px !important;
+  }
+  #carouselExampleControls {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .container-title_ropa {
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    background-color: white !important;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+  }
+  .container-fotos_ropa {
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-fotos_ropa-cards {
+    position: relative;
+    width: 310px; /* O ajusta el ancho según tus necesidades */
+    height: 500px; /* O ajusta la altura según tus necesidades */
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+  }
+  .container-fotos_ropa-cards-content-blue {
+    transition: filter 0.3s ease-in-out;
+  }
+  .container-fotos_ropa-cards-content :hover {
+    filter: blur(8px);
+  }
+  .container-fotos_ropa-cards-overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 18px;
+  }
+  .container-fotos_ropa-cards-overlayy {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18px;
+  }
+  #imagen_productos_oferta {
+    height: 600px !important;
+    width: 100%;
+  }
+  #imagen_productos_ofertaaa {
+    height: 590px !important;
+    width: 100%;
+  }
+  #imagen_productos_ofertaa {
+    height: 580px !important;
+    width: 100%;
+  }
+  .btn {
+    border: 10px !important;
+    border-color: black !important;
+    border-radius: 10px !important;
+    font-size: 20px;
+    background-color: rgb(0, 0, 0) !important;
+    padding: 10px !important;
+    font-weight: bold !important;
+  }
+  .btn:hover {
+    border: 5px !important;
+    border-color: black !important;
+    background-color: rgb(187, 183, 183) !important;
+    color: black !important;
+    font-weight: bold;
+  }
+  .cardbtn_ofertas {
+    align-items: center !important;
+    display: flex;
+    float: right;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100% !important;
+  }
+  .container-titleOfertas {
+    color: white;
+    text-align: center;
+  }
+  .container-mapa_tienda {
+    width: 400px !important;
+  }
+  .container-mapa_tienda-iframe_mapa {
+    width: 400px !important;
+    height: 250px;
+  }
+  .container-mapa_tienda-title_mapa {
+    color: white;
+    text-align: center;
+  }
+  .container-productos_oferta {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  .container-productos_oferta-ropa_oferta {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .container-productos_oferta-ropa_oferta-cards {
+    height: 750px;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 2000px) {
+  #img_carou {
+    height: 300px;
+  }
+  #carouselExampleControls {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100%;
+  }
+  #imagenes_destacadas {
+    width: 100%;
+    height: 250px !important;
+  }
+  .container {
+    max-width: 100% !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-title_marcas {
+    text-align: center;
+    color: white;
+    padding-bottom: 10px !important;
+  }
+  .container-cardsMarcas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container-cardsMarcas-cards {
+    height: 450px;
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px !important;
+    margin-bottom: 10px;
+  }
+  .container-cardsMarcas-cards-title {
+    text-align: center;
+  }
+  .container-seccionAbajo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    /*&-imagenes{
+        width: 100%;
+        padding-bottom: 20px !important;
+        &-carou{
+            border-radius: 10px !important;
+        }
+    }*/
+  }
+  .container-seccionAbajo-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap;
+  }
+  .container-seccionAbajo-cards-cardUno {
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px !important;
+    margin-bottom: 10px;
+  }
+  .container-seccionAbajo-cards-cardUno-cardFoto {
+    width: 400px !important;
+  }
+  .container-seccionAbajo-cards-cardUno-cardFoto-cardss {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .container-seccionAbajo-cards-cardUno-cardFoto-cardss-imagen {
+    width: 100%;
+  }
+  .container-seccionAbajo-imagenes {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-bottom: 20px !important;
+    width: 500px !important;
+  }
+  .container-seccionAbajo-imagenes-carouselImg {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-seccionAbajo-imagenes-carouselImg-carou {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px !important;
+  }
+  #imagen_productos_oferta {
+    height: 750px !important;
+    width: 100%;
+    border-radius: 20px;
+  }
+  #imagen_productos_ofertaaa {
+    height: 750px !important;
+    width: 100%;
+    border-radius: 20px;
+  }
+  #imagen_productos_ofertaa {
+    height: 750px !important;
+    width: 410px;
+    border-radius: 20px;
+  }
+  .cardbtn_ofertas {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 18px;
+  }
+  .btn {
+    border: 0px !important;
+    border-radius: 10px !important;
+    font-size: 20px;
+    background-color: black !important;
+    padding: 10px !important;
+  }
+  .btn:hover {
+    background-color: white !important;
+    color: black !important;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-  }
-  .containerropa-fotos_ropa_productos-texto_prod {
-    text-align: center;
-    color: rgb(0, 0, 0) !important;
-    font-size: 18px;
-  }
-  .containerropa-navegacion {
-    display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    align-items: inherit !important;
-    justify-content: center !important;
-    margin-top: 10px;
+    max-width: 1800px !important;
   }
-  .containerropa .list-group {
+  .container-mapa_tienda {
     display: flex;
-    flex-direction: column;
-    margin-left: 190px;
+    flex-direction: row;
+    width: 1000px !important;
   }
-  .containerropa .list-group-item {
-    margin-top: 5px;
+  .container-mapa_tienda-iframe_mapa {
+    width: 400px !important;
+    height: 250px;
+    margin-right: 20px;
   }
-  .containerropa .list-group-item:hover {
-    background-color: rgb(216, 211, 211);
+  .container-mapa_tienda-title_mapa {
+    padding-top: 50px !important;
+    width: 600px;
+    color: black;
+    background-color: bisque;
   }
-  #imagen_prod_uno {
-    width: 420px;
+  .container-productos_oferta {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  #imagen_prod_dos {
-    width: 420px;
+  .container-productos_oferta-ropa_oferta {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: 40px;
   }
-  #imagen_prod_tres {
-    width: 420px;
+  .container-productos_oferta-ropa_oferta-cards {
+    display: flex;
+    flex-direction: row !important;
+    height: 750px;
+    border-radius: 20px !important;
   }
-  #imagen_prod_cuatro {
-    width: 420px;
+  .container-productos_oferta-ropa_oferta-cards-imcard-card_oferta {
+    display: none;
   }
 }
 
