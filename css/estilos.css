@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(243, 43, 43) !important;
+  background-color: rgb(0, 0, 0) !important;
   padding: 0px !important;
   margin: 0px !important;
 }
@@ -77,6 +77,9 @@ body {
 .container-seccionAbajo-cards-cardUno-cardFoto-cardss-imagen {
   width: 100%;
 }
+.container-seccionAbajo-cards-cardUno-cardFoto-cardss-cuerpo-cardbody {
+  background-color: black !important;
+}
 .container-seccionAbajo-imagenes {
   padding-bottom: 20px !important;
 }
@@ -109,13 +112,13 @@ main {
 }
 
 footer {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   bottom: 0;
   width: 100%;
   position: fixed;
   text-align: center;
   font-size: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
   margin-top: 10px !important;
 }
 
@@ -242,6 +245,10 @@ footer {
   background-color: transparent;
 }
 
+.parrafo_cards {
+  text-align: center;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -264,17 +271,17 @@ footer {
 
 #imagen_productos_oferta {
   height: 600px !important;
-  width: 400px;
+  width: 100%;
 }
 
 #imagen_productos_ofertaaa {
   height: 580px !important;
-  width: 400px;
+  width: 100%;
 }
 
 #imagen_productos_ofertaa {
   height: 560px !important;
-  width: 400px;
+  width: 100%;
 }
 
 .btn {
@@ -305,6 +312,10 @@ footer {
   width: 100%;
 }
 
+.cardimgtop {
+  background-color: black;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -322,7 +333,7 @@ footer {
   height: 250px;
 }
 .container-mapa_tienda-title_mapa {
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 .container-productos_oferta {
@@ -337,6 +348,67 @@ footer {
 .container-productos_oferta-ropa_oferta-cards {
   width: 400px;
   height: 750px;
+  background-color: black;
+}
+
+#foto_historia {
+  width: 100% !important;
+  height: 600px !important;
+  border-radius: 10px;
+}
+
+#foto_historia_calle {
+  width: 100% !important;
+  height: 300px !important;
+  border-radius: 10px;
+}
+
+#foto_historia_colpatria {
+  width: 100% !important;
+  height: 600px !important;
+  border-radius: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container-quienes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-quienes-title {
+  color: white;
+}
+.container-quienes-historia-parrafo {
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+}
+.container-quienes-historia_dos-parrafo {
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+}
+.container-quienes-historia_tres-parrafo {
+  color: white;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container-form {
+  margin-top: 250px;
+  justify-content: center;
+  align-items: center;
+}
+.container-form-formLogin-forms {
+  width: 400px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -515,7 +587,7 @@ footer {
     width: 100%;
   }
   #imagen_productos_ofertaa {
-    height: 580px !important;
+    height: 570px !important;
     width: 100%;
   }
   .btn {
@@ -573,6 +645,67 @@ footer {
   }
   .container-productos_oferta-ropa_oferta-cards {
     height: 750px;
+  }
+  .container {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;*/
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1800px !important;
+  }
+  .container-cont_accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px !important;
+  }
+  .container-cont_accesorios-titulo {
+    text-align: center;
+    color: white;
+  }
+  .container-cont_accesorios-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container-cont_accesorios-group-cards {
+    width: 400px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-form {
+    margin-top: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form-formLogin-forms {
+    width: 400px;
+  }
+  .container-form-formLogin-forms-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form-formLogin-forms-login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 2000px) {
@@ -683,16 +816,19 @@ footer {
     height: 750px !important;
     width: 100%;
     border-radius: 20px;
+    background-color: black;
   }
   #imagen_productos_ofertaaa {
     height: 750px !important;
     width: 100%;
     border-radius: 20px;
+    background-color: black;
   }
   #imagen_productos_ofertaa {
     height: 750px !important;
-    width: 410px;
+    width: 100%;
     border-radius: 20px;
+    background-color: black;
   }
   .cardbtn_ofertas {
     position: absolute;
@@ -715,8 +851,6 @@ footer {
     color: black !important;
   }
   .container {
-    display: flex;
-    justify-content: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -742,26 +876,133 @@ footer {
   }
   .container-productos_oferta {
     display: flex;
-    justify-content: center;
+    justify-content: center !important;
+    align-items: center !important;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 20px;
   }
   .container-productos_oferta-ropa_oferta {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 20px;
-    margin-right: 40px;
+    margin-right: 10px;
   }
   .container-productos_oferta-ropa_oferta-cards {
     display: flex;
     flex-direction: row !important;
     height: 750px;
-    border-radius: 20px !important;
+    border-radius: 10px !important;
+    background-color: black !important;
   }
   .container-productos_oferta-ropa_oferta-cards-imcard-card_oferta {
     display: none;
+  }
+  .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container-title_ropa {
+    align-items: center;
+    justify-content: center;
+    text-align: center !important;
+    background-color: white !important;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+  }
+  .container-fotos_ropa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-fotos_ropa-cards {
+    position: relative;
+    width: 310px; /* O ajusta el ancho según tus necesidades */
+    height: 500px; /* O ajusta la altura según tus necesidades */
+    background-color: transparent;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  .container-fotos_ropa-cards-content-blue {
+    transition: filter 0.3s ease-in-out;
+  }
+  .container-fotos_ropa-cards-content :hover {
+    filter: blur(8px);
+  }
+  .container-fotos_ropa-cards-overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    font-size: 18px;
+  }
+  .container-fotos_ropa-cards-overlayy {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 18px;
+  }
+  #fotos_ropa {
+    height: 500px;
+    border-radius: 10px;
+  }
+  #cardsropa {
+    background-color: transparent;
+  }
+  .container {
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;*/
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1800px !important;
+  }
+  .container-cont_accesorios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px !important;
+  }
+  .container-cont_accesorios-titulo {
+    text-align: center;
+    color: white;
+  }
+  .container-cont_accesorios-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .container-cont_accesorios-group-cards {
+    width: 400px;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 }
 

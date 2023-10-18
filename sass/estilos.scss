@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: rgb(243, 43, 43) !important;
+    background-color: rgb(0, 0, 0) !important;
     padding: 0px !important;
     margin: 0px !important;
 }
@@ -83,6 +83,12 @@ z-index: 1;
                         &-imagen{
                             width: 100%;
                         }
+                        &-cuerpo{
+
+                            &-cardbody{
+                                background-color: black !important;
+                            }
+                        }
                     }
                 }
             }
@@ -125,13 +131,13 @@ main{
 
 //pie de pagina
 footer{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     bottom: 0;
     width: 100%;
     position: fixed;
     text-align: center;
     font-size: 15px;
-    color: white;
+    color: rgb(0, 0, 0);
     margin-top: 10px !important;
 }
 
@@ -223,7 +229,7 @@ footer{
         margin-bottom: 20px;
     }
     &-fotos_ropa{
-
+        
         &-cards{
             position: relative;
             width: 310px; /* O ajusta el ancho según tus necesidades */
@@ -277,6 +283,11 @@ footer{
 
 //estilos oara accesorios.html
 
+.parrafo_cards{
+    text-align: center;
+}
+
+
 .container{
     display: flex;
     flex-direction: column;
@@ -310,17 +321,17 @@ footer{
 
 #imagen_productos_oferta{
     height: 600px !important;
-    width: 400px;
+    width: 100%;
 }
 
 #imagen_productos_ofertaaa{
     height: 580px !important;
-    width: 400px;
+    width: 100%;
 }
 
 #imagen_productos_ofertaa{
     height: 560px !important;
-    width: 400px;
+    width: 100%;
 }
 
 .btn{
@@ -351,6 +362,11 @@ footer{
     height: 750px !important;
     width: 100%;
 }
+
+.cardimgtop{
+    background-color: black;
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -366,7 +382,7 @@ footer{
             height: 250px;
         }
         &-title_mapa{
-            color: white;
+            color: rgb(255, 255, 255);
             text-align: center;
         }
     }
@@ -380,12 +396,97 @@ footer{
             &-cards{
                 width: 400px;
                 height: 750px;
+                background-color: black;
             }
         }
     }
 }
 
 //////////////////////////////////////////////////////////
+
+#foto_historia{
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+}
+
+#foto_historia_calle{
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 10px;
+}
+
+#foto_historia_colpatria{
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+}
+
+//estilos para politicas.html
+.container{
+    display: flex;
+    flex-direction: row;
+    &-quienes{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &-title{
+            color: white;
+        }
+        &-historia{
+
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+        &-historia_dos{
+
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+        &-historia_tres{
+
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+/////////////////////////////////////////
+
+
+
+
+
+//estilos para login.html
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    &-form{
+        margin-top: 250px;
+        justify-content: center;
+        align-items: center;
+        &-formLogin{
+
+            &-forms{
+                width: 400px;
+            }
+        }
+    }
+}
+
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -589,7 +690,7 @@ footer{
 }
 
 #imagen_productos_ofertaa{
-    height: 580px !important;
+    height: 570px !important;
     width: 100%;
 }
 
@@ -651,6 +752,87 @@ footer{
         }
     }
 }
+////////////////////////////////////////
+
+
+
+
+/// //estilos oara accesorios.html
+
+.container{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;*/
+    
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1800px !important;
+    &-cont_accesorios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px !important;
+        &-titulo{
+            text-align: center;
+            color: white;
+        }
+        &-group{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            &-cards{
+                width: 400px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////
+
+
+
+
+
+        //estilos para login.html
+        .container{
+            
+            display: flex;
+            flex-direction: row;
+            &-form{
+                margin-top: 250px;
+                justify-content: center;
+                align-items: center;
+                &-formLogin{
+
+                    &-forms{
+                        width: 400px;
+                        &-login{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            &-form{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
 }
 
 
@@ -778,6 +960,7 @@ footer{
         height: 750px !important;
         width: 100%;
         border-radius: 20px;
+        background-color: black;
         
     }
     
@@ -785,12 +968,14 @@ footer{
         height: 750px !important;
         width: 100%;
         border-radius: 20px;
+        background-color: black;
     }
     
     #imagen_productos_ofertaa{
         height: 750px !important;
-        width: 410px;
+        width: 100%;
         border-radius: 20px;
+        background-color: black;
     }
 
     
@@ -820,8 +1005,6 @@ footer{
     
     .container{
         display: flex;
-        justify-content: center;
-        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -845,21 +1028,25 @@ footer{
         }
         &-productos_oferta{
             display: flex;
-            justify-content: center;
+            justify-content: center !important;
+            align-items: center !important;
             flex-direction: row;
             flex-wrap: wrap;
+            margin-bottom: 20px;
             &-ropa_oferta{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin-top: 20px;
-                margin-right: 40px;
+                margin-right: 10px;
                 &-cards{
                     display: flex;
                     flex-direction: row !important;
                     height: 750px;
-                    border-radius: 20px !important;    
+                    border-radius: 10px !important;  
+                    background-color: black !important;  
                     &-imcard{
                         
                         &-card_oferta{
@@ -871,5 +1058,130 @@ footer{
             }
         }
     }
+    ///////////////////////////////
+
+
+
+
+    //estilos para ropa
+.container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-title_ropa{
+        align-items: center;
+        justify-content: center;
+        text-align: center !important;
+        background-color: white !important;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 20px;
+    }
+    &-fotos_ropa{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        &-cards{
+            position: relative;
+            width: 310px; /* O ajusta el ancho según tus necesidades */
+            height: 500px; /* O ajusta la altura según tus necesidades */
+            background-color: transparent;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            &-content{
+                &-blue{
+                    transition: filter 0.3s ease-in-out;
+                }
+                :hover{
+                    filter: blur(8px);
+                }
+            }
+            &-overlay{
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(0, 0, 0);
+                padding: 10px;
+                font-size: 18px;
+            }
+            &-overlayy{
+                position: absolute;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(255, 255, 255);
+                padding: 10px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+#fotos_ropa{
+    height: 500px;
+    border-radius: 10px;
+}
+
+#cardsropa{
+    background-color: transparent;
+}
+
+////////////////////////////////////////////////
+/// 
+/// 
+/// 
+/// 
+/// 
+/// //estilos oara accesorios.html
+
+.container{
+    /*display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;*/
+    
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1800px !important;
+    &-cont_accesorios{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px !important;
+        &-titulo{
+            text-align: center;
+            color: white;
+        }
+        &-group{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            &-cards{
+                width: 400px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+////////////////////////////////////////////////
     
 }

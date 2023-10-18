@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="icon" type="image/jpg" href="../img/logo.jpeg"/>
-    <link rel="stylesheet" href="../cssLogin/estilosLogin.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,22 +46,12 @@
           </nav>
     </header>
     <main>
-        <div class="containerFormss">
-            <div class="containerFormss-info_entrega">
-                <div class="mapa_entrega_producto">   
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30978904.83534784!2d-95.6581964482176!3d18.591856844475675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9cb759f13095%3A0xb6c7ee346c36ec5b!2sTime%20Square!5e0!3m2!1ses!2sco!4v1693882050388!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="imagen_producto_entrega">
-                    <img src="img/11a.jpeg" id="imagen_producto_grande_entrega">
-                    <p class="descripcion_producto_entrega">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vitae!</p>
-                </div>
-            </div>
-
-            <div class="containerFormss-form">
-                <div class="containerFormss-form-formLogin">
-                    <div class="card containerFormss-form-formLogin-forms">
-                        <div class="card-body">
-                            <form class="">
+        <div class="container">
+            <div class="container-form">
+                <div class="container-form-formLogin">
+                    <div class="card container-form-formLogin-forms">
+                        <div class="card-body container-form-formLogin-forms-login">
+                            <form class="container-form-formLogin-forms-login-form">
                                 <div class="row">
                                     <div class="">
                                         <div class="form-group">
@@ -79,7 +69,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-primary mt-3">Iniciar Sesión</button>
+                                <div class="container-form-formLogin-forms-boton">
+                                    <button type="submit" class="btn btn-primary mt-3">Iniciar Sesión</button>
+                                </div>
                                 <div class="mt-4">
                                     <a href="registrar.html">No tiene cuenta, regístrese aquí</a>
                                 </div>
