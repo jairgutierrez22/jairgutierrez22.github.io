@@ -40,9 +40,10 @@ z-index: 1;
 .container{
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 500px !important;
     display: flex;
     flex-direction: column;
+    align-items: center;
     &-title_marcas{
         text-align: center; 
         color: white;
@@ -215,7 +216,7 @@ footer{
 .container{
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
+    width: 500px !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -367,41 +368,96 @@ footer{
     background-color: black;
 }
 
+// .container{
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//     &-cont-ofertas{
+//         &-titles{
+//             display: flex;
+//             flex-direction: column;
+//             justify-content: center;
+//             align-items: center;
+//             &-titleOfertas{
+//                 color: rgb(255, 255, 255);
+//                 text-align: center;
+//             }
+//             &-mapa_tienda{
+//                 width: 400px !important;
+//                 &-iframe_mapa{
+//                     width: 400px !important;
+//                     height: 250px;
+//                 }
+//                 &-title_mapa{
+//                     color: rgb(255, 255, 255);
+//                     text-align: center;
+//                 }
+//             }
+//         }
+        
+//         &-productos_oferta{
+//             display: flex;
+//             justify-content: center;
+//             flex-direction: row;
+//             flex-wrap: wrap;
+//             margin-bottom: 20px;
+//             &-ropa_oferta{
+//                 margin-top: 20px;
+//                 &-cards{
+//                     width: 400px;
+//                     height: 750px;
+//                     background-color: black;
+//                 }
+//             }
+//         }
+//     }
+// }
+
 .container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    &-titleOfertas{
-        color: white;
-        text-align: center;
-    }
-    &-mapa_tienda{
-        width: 400px !important;
-        &-iframe_mapa{
-            width: 400px !important;
-            height: 250px;
+    max-width: 100% !important;
+    &-cont_ofertas{
+
+        &-titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-titleOfertas{
+                color: white;
+                text-align: center;
+            }
+            &-mapa_tienda{
+                width: 400px !important;
+                &-iframe_mapa{
+                    width: 400px !important;
+                    height: 250px;
+                }
+                &-title_mapa{
+                    color: white;
+                    text-align: center;
+                }
+            }
         }
-        &-title_mapa{
-            color: rgb(255, 255, 255);
-            text-align: center;
-        }
-    }
-    &-productos_oferta{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        &-ropa_oferta{
-            margin-top: 20px;
-            &-cards{
-                width: 400px;
-                height: 750px;
-                background-color: black;
+        &-productos_oferta{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            &-ropa_oferta{
+                margin-top: 20px;
+                &-cards{
+                    width: 400px;
+                    height: 750px;
+                }
             }
         }
     }
 }
-
 //////////////////////////////////////////////////////////
 
 #foto_historia{
@@ -426,6 +482,8 @@ footer{
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100% !important;
     &-quienes{
 
         display: flex;
@@ -475,23 +533,124 @@ footer{
     display: flex;
     flex-direction: row;
     &-form{
-        margin-top: 250px;
+        margin-top: 220px;
         justify-content: center;
         align-items: center;
         &-formLogin{
 
             &-forms{
                 width: 400px;
+                &-login{
+
+                    &-form{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        &-regis{
+                            display: flex;
+                            flex-direction: column;
+                            &-form_group{
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                &-label{
+                                    font-weight: bold;
+                                }
+                            }
+                            
+                        }
+                        &-botonLogin{
+
+                            &-login{
+                                float: right;
+                                :hover{
+                                    background-color: rgb(22, 22, 22) !important;
+                                }
+                            }
+                        }
+
+                        &-boton{
+
+                            &-registrar{
+                                text-decoration: none !important;
+                                color: black;
+                                font-weight: bold;
+                                float: right;
+                                &:hover{
+                                    color: rgb(32, 31, 31);
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
 
 
+//estilos para registrar.html
+
+
+
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    &-registrarForm{
+        margin-top: 150px;
+        justify-content: center;
+        align-items: center;
+        &-formLogin{
+
+            &-forms{
+                width: 400px;
+                height: 500px;
+                &-login{
+
+                    &-form{
+                        display: flex;
+                        flex-direction: column;
+                        &-botonLogin{
+
+                            &-login{
+                                float: right;
+                            }
+                        }
+
+                        &-boton{
+
+                            &-regis{
+                                text-decoration: none !important;
+                                color: black;
+                                font-weight: bold;
+                                float: right;
+                                &:hover{
+                                    color: rgb(19, 18, 18);
+                                }
+                            }
+                        }
+                    }
+                }
+                &-regis{
+                    display: flex;
+                    flex-direction: column;
+                    &-form_group{
+                        &-label{
+                            font-weight: bold;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body{
-        background-color: rgb(79, 18, 221) !important;
+        background-color: rgb(0, 0, 0) !important;
         padding: 0px !important;
         margin: 0px !important;
     }
@@ -550,7 +709,7 @@ footer{
             justify-content: center;
             &-cards{
                 height: 450px;
-                width: 183px;
+                width: 200px;
                 margin-left: 20px;
                 margin-right: 20px;
                 border-radius: 10px !important;
@@ -574,7 +733,7 @@ footer{
                     margin-bottom: 10px;
                     margin-right: 10px;
                     &-cardFoto{
-                        width: 400px !important;
+                        width: 500px !important;
                         &-cardss{
                             &-imagen{
                                 width: 100%;
@@ -722,32 +881,44 @@ footer{
     justify-content: center;
     flex-wrap: wrap;
     max-width: 100% !important;
-    &-titleOfertas{
-        color: white;
-        text-align: center;
-    }
-    &-mapa_tienda{
-        width: 400px !important;
-        &-iframe_mapa{
-            width: 400px !important;
-            height: 250px;
+    &-cont_ofertas{
+
+        &-titles{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            &-titleOfertas{
+                color: white;
+                text-align: center;
+            }
+            &-mapa_tienda{
+                width: 400px !important;
+                &-iframe_mapa{
+                    width: 400px !important;
+                    height: 250px;
+                }
+                &-title_mapa{
+                    color: white;
+                    text-align: center;
+                }
+            }
         }
-        &-title_mapa{
-            color: white;
-            text-align: center;
-        }
-    }
-    &-productos_oferta{
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 20px;
-        &-ropa_oferta{
-            margin-top: 20px;
-            margin-right: 20px;
-            &-cards{
-                height: 750px;
+        &-productos_oferta{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+            width: 750px;
+            &-ropa_oferta{
+                margin-top: 20px;
+                margin-right: 20px;
+                &-cards{
+                    width: 320px;
+                    height: 750px;
+                }
             }
         }
     }
@@ -774,7 +945,7 @@ footer{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1800px !important;
+    min-width: 100% !important;
     &-cont_accesorios{
         display: flex;
         flex-wrap: wrap;
@@ -807,20 +978,27 @@ footer{
 
 
         //estilos para login.html
-        .container{
+       /* .container{
             
             display: flex;
             flex-direction: row;
             &-form{
+                display: flex;
+                flex-direction: column;
                 margin-top: 250px;
                 justify-content: center;
                 align-items: center;
                 &-formLogin{
 
+                    display: flex;
+                    flex-direction: column;
                     &-forms{
+                        display: flex;
+                        flex-direction: column;
                         width: 400px;
                         &-login{
                             display: flex;
+                            flex-direction: column;
                             justify-content: center;
                             align-items: center;
                             &-form{
@@ -832,7 +1010,102 @@ footer{
                     }
                 }
             }
+        }*/
+
+
+
+
+//estilos para politicas.html
+
+#foto_historia{
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+}
+
+#foto_historia_calle{
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 10px;
+}
+
+#foto_historia_colpatria{
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100%;
+    &-quienes{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-bottom: 20px;
+        &-title{
+            color: rgb(252, 252, 252);
         }
+        &-historia{
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            &-foto{
+                width: 400px !important;
+            }
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+                width: 300px !important;
+                height: 200px;
+                padding: 20px;
+            }
+        }
+        &-historia_dos{
+            margin-top: 20px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            &-foto_dos{
+                width: 400px !important;
+            }
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+                width: 300px !important;
+                height: 200px;
+                padding: 20px;
+            }
+        }
+        &-historia_tres{
+            margin-top: 20px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            &-foto_tres{
+                width: 400px !important;
+            }
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+                width: 300px !important;
+                height: 200px;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+
 }
 
 
@@ -955,7 +1228,7 @@ footer{
 
 
 
-    //estilso para ofertas.html
+//estilso para ofertas.html
     #imagen_productos_oferta{
         height: 750px !important;
         width: 100%;
@@ -1009,35 +1282,39 @@ footer{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        max-width: 1800px !important;
-        &-mapa_tienda{
-            display: flex;
-            flex-direction: row;
-            width: 1000px !important;
-            &-iframe_mapa{
-                width: 400px !important;
-                height: 250px;
-                margin-right: 20px;
-            }
-            &-title_mapa{
-                padding-top: 50px !important;
-                width: 600px;
-                color: black;
-                background-color: bisque;
+        min-width: 100% !important;
+        &-cont_ofertas{
+            
+        &-titles{
+            &-mapa_tienda{
+                display: flex;
+                flex-direction: column;
+                justify-content: center !important;
+                align-items: center !important;
+                &-iframe_mapa{
+                    width: 400px !important;
+                    height: 250px;
+                    margin-right: 20px;
+                }
+                &-title_mapa{
+                    padding-top: 50px !important;
+                    width: 400px;
+                    color: rgb(255, 255, 255);
+                }
             }
         }
         &-productos_oferta{
             display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
             justify-content: center !important;
             align-items: center !important;
-            flex-direction: row;
-            flex-wrap: wrap;
             margin-bottom: 20px;
             &-ropa_oferta{
                 display: flex;
+                flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                flex-direction: row;
                 flex-wrap: wrap;
                 margin-top: 20px;
                 margin-right: 10px;
@@ -1049,6 +1326,8 @@ footer{
                     background-color: black !important;  
                     &-imcard{
                         
+                    align-items: center;
+                    justify-content: center;
                         &-card_oferta{
                             display: none;
                         }
@@ -1056,6 +1335,7 @@ footer{
                     
                 }
             }
+        }
         }
     }
     ///////////////////////////////
@@ -1183,5 +1463,193 @@ footer{
 }
 
 ////////////////////////////////////////////////
+
+
+
+ //estilos para login.html
+/* .container{
+            
+    display: flex;
+    flex-direction: column !important;
+    &-form{
+        display: flex;
+        flex-direction: column !important;
+        margin-top: 250px;
+        justify-content: center;
+        align-items: center;
+        &-formLogin{
+
+            display: flex;
+            flex-direction: column !important;
+            &-forms{
+                display: flex;
+                flex-direction: column !important;
+                width: 900px;
+                &-login{
+                    display: flex;
+                    flex-direction: row !important;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: blue;
+                    width: 200px;
+                    height: 500px;
+                    &-form{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}*/
+
+//estilos para login.html
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    &-form{
+        margin-top: 220px;
+        justify-content: center;
+        align-items: center;
+        &-formLogin{
+
+            &-forms{
+                width: 400px;
+                &-login{
+
+                    &-form{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        &-regis{
+                            display: flex;
+                            flex-direction: column;
+                            &-form_group{
+                                align-items: center;
+                                justify-content: center;
+                                text-align: center;
+                                &-label{
+                                    font-weight: bold;
+                                }
+                            }
+                            
+                        }
+                        &-botonLogin{
+
+                            &-login{
+                                float: right;
+                                :hover{
+                                    background-color: rgb(24, 23, 23) !important;
+                                }
+                            }
+                        }
+
+                        &-boton{
+
+                            &-registrar{
+                                text-decoration: none !important;
+                                color: black;
+                                font-weight: bold;
+                                float: right;
+                                &:hover{
+                                    color: rgb(32, 31, 31);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//estilos para politicas.html
+
+#foto_historia{
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+}
+
+#foto_historia_calle{
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 10px;
+}
+
+#foto_historia_colpatria{
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px !important;
+    &-quienes{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        &-title{
+            color: rgb(252, 252, 252);
+        }
+        &-historia{
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            &-foto{
+                width: 400px !important;
+            }
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+                width: 400px !important;
+                height: 200px;
+                padding: 20px;
+            }
+        }
+        &-historia_dos{
+            margin-top: 20px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            &-foto_dos{
+                width: 400px !important;
+            }
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+                width: 400px !important;
+                height: 200px;
+                padding: 20px;
+            }
+        }
+        &-historia_tres{
+            margin-top: 20px;
+            width: 800px;
+            display: flex;
+            flex-direction: row;
+            &-foto_tres{
+                width: 400px !important;
+            }
+            &-parrafo{
+                color: white;
+                text-align: left;
+                margin-top: 10px;
+                width: 400px !important;
+                height: 200px;
+                padding: 20px;
+            }
+        }
+    }
+}
     
 }

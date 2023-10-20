@@ -32,9 +32,10 @@ body {
 .container {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 500px !important;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .container-title_marcas {
   text-align: center;
@@ -189,7 +190,7 @@ footer {
 .container {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 100%;
+  width: 500px !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,35 +321,43 @@ footer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: 100% !important;
 }
-.container-titleOfertas {
+.container-cont_ofertas-titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-cont_ofertas-titles-titleOfertas {
   color: white;
   text-align: center;
 }
-.container-mapa_tienda {
+.container-cont_ofertas-titles-mapa_tienda {
   width: 400px !important;
 }
-.container-mapa_tienda-iframe_mapa {
+.container-cont_ofertas-titles-mapa_tienda-iframe_mapa {
   width: 400px !important;
   height: 250px;
 }
-.container-mapa_tienda-title_mapa {
-  color: rgb(255, 255, 255);
+.container-cont_ofertas-titles-mapa_tienda-title_mapa {
+  color: white;
   text-align: center;
 }
-.container-productos_oferta {
+.container-cont_ofertas-productos_oferta {
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-.container-productos_oferta-ropa_oferta {
+.container-cont_ofertas-productos_oferta-ropa_oferta {
   margin-top: 20px;
 }
-.container-productos_oferta-ropa_oferta-cards {
+.container-cont_ofertas-productos_oferta-ropa_oferta-cards {
   width: 400px;
   height: 750px;
-  background-color: black;
 }
 
 #foto_historia {
@@ -372,6 +381,8 @@ footer {
 .container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100% !important;
 }
 .container-quienes {
   display: flex;
@@ -403,17 +414,85 @@ footer {
   flex-direction: row;
 }
 .container-form {
-  margin-top: 250px;
+  margin-top: 220px;
   justify-content: center;
   align-items: center;
 }
 .container-form-formLogin-forms {
   width: 400px;
 }
+.container-form-formLogin-forms-login-form {
+  display: flex;
+  flex-direction: column;
+}
+.container-form-formLogin-forms-login-form-regis {
+  display: flex;
+  flex-direction: column;
+}
+.container-form-formLogin-forms-login-form-regis-form_group {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.container-form-formLogin-forms-login-form-regis-form_group-label {
+  font-weight: bold;
+}
+.container-form-formLogin-forms-login-form-botonLogin-login {
+  float: right;
+}
+.container-form-formLogin-forms-login-form-botonLogin-login :hover {
+  background-color: rgb(22, 22, 22) !important;
+}
+.container-form-formLogin-forms-login-form-boton-registrar {
+  text-decoration: none !important;
+  color: black;
+  font-weight: bold;
+  float: right;
+}
+.container-form-formLogin-forms-login-form-boton-registrar:hover {
+  color: rgb(32, 31, 31);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.container-registrarForm {
+  margin-top: 150px;
+  justify-content: center;
+  align-items: center;
+}
+.container-registrarForm-formLogin-forms {
+  width: 400px;
+  height: 500px;
+}
+.container-registrarForm-formLogin-forms-login-form {
+  display: flex;
+  flex-direction: column;
+}
+.container-registrarForm-formLogin-forms-login-form-botonLogin-login {
+  float: right;
+}
+.container-registrarForm-formLogin-forms-login-form-boton-regis {
+  text-decoration: none !important;
+  color: black;
+  font-weight: bold;
+  float: right;
+}
+.container-registrarForm-formLogin-forms-login-form-boton-regis:hover {
+  color: rgb(19, 18, 18);
+}
+.container-registrarForm-formLogin-forms-regis {
+  display: flex;
+  flex-direction: column;
+}
+.container-registrarForm-formLogin-forms-regis-form_group-label {
+  font-weight: bold;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   body {
-    background-color: rgb(79, 18, 221) !important;
+    background-color: rgb(0, 0, 0) !important;
     padding: 0px !important;
     margin: 0px !important;
   }
@@ -466,7 +545,7 @@ footer {
   }
   .container-cardsMarcas-cards {
     height: 450px;
-    width: 183px;
+    width: 200px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px !important;
@@ -492,7 +571,7 @@ footer {
     margin-right: 10px;
   }
   .container-seccionAbajo-cards-cardUno-cardFoto {
-    width: 400px !important;
+    width: 500px !important;
   }
   .container-seccionAbajo-cards-cardUno-cardFoto-cardss-imagen {
     width: 100%;
@@ -617,33 +696,42 @@ footer {
     flex-wrap: wrap;
     max-width: 100% !important;
   }
-  .container-titleOfertas {
+  .container-cont_ofertas-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-cont_ofertas-titles-titleOfertas {
     color: white;
     text-align: center;
   }
-  .container-mapa_tienda {
+  .container-cont_ofertas-titles-mapa_tienda {
     width: 400px !important;
   }
-  .container-mapa_tienda-iframe_mapa {
+  .container-cont_ofertas-titles-mapa_tienda-iframe_mapa {
     width: 400px !important;
     height: 250px;
   }
-  .container-mapa_tienda-title_mapa {
+  .container-cont_ofertas-titles-mapa_tienda-title_mapa {
     color: white;
     text-align: center;
   }
-  .container-productos_oferta {
+  .container-cont_ofertas-productos_oferta {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     margin-bottom: 20px;
+    width: 750px;
   }
-  .container-productos_oferta-ropa_oferta {
+  .container-cont_ofertas-productos_oferta-ropa_oferta {
     margin-top: 20px;
     margin-right: 20px;
   }
-  .container-productos_oferta-ropa_oferta-cards {
+  .container-cont_ofertas-productos_oferta-ropa_oferta-cards {
+    width: 320px;
     height: 750px;
   }
   .container {
@@ -660,7 +748,7 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1800px !important;
+    min-width: 100% !important;
   }
   .container-cont_accesorios {
     display: flex;
@@ -685,27 +773,122 @@ footer {
     margin-bottom: 10px;
     margin-right: 10px;
   }
+  /* .container{
+
+       display: flex;
+       flex-direction: row;
+       &-form{
+           display: flex;
+           flex-direction: column;
+           margin-top: 250px;
+           justify-content: center;
+           align-items: center;
+           &-formLogin{
+
+               display: flex;
+               flex-direction: column;
+               &-forms{
+                   display: flex;
+                   flex-direction: column;
+                   width: 400px;
+                   &-login{
+                       display: flex;
+                       flex-direction: column;
+                       justify-content: center;
+                       align-items: center;
+                       &-form{
+                           display: flex;
+                           justify-content: center;
+                           align-items: center;
+                       }
+                   }
+               }
+           }
+       }
+   }*/
+  #foto_historia {
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+  }
+  #foto_historia_calle {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 10px;
+  }
+  #foto_historia_colpatria {
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+  }
   .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100%;
+  }
+  .container-quienes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 20px;
+  }
+  .container-quienes-title {
+    color: rgb(252, 252, 252);
+  }
+  .container-quienes-historia {
+    width: 800px;
     display: flex;
     flex-direction: row;
   }
-  .container-form {
-    margin-top: 250px;
-    justify-content: center;
-    align-items: center;
+  .container-quienes-historia-foto {
+    width: 400px !important;
   }
-  .container-form-formLogin-forms {
-    width: 400px;
+  .container-quienes-historia-parrafo {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    width: 300px !important;
+    height: 200px;
+    padding: 20px;
   }
-  .container-form-formLogin-forms-login {
+  .container-quienes-historia_dos {
+    margin-top: 20px;
+    width: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
-  .container-form-formLogin-forms-login-form {
+  .container-quienes-historia_dos-foto_dos {
+    width: 400px !important;
+  }
+  .container-quienes-historia_dos-parrafo {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    width: 300px !important;
+    height: 200px;
+    padding: 20px;
+  }
+  .container-quienes-historia_tres {
+    margin-top: 20px;
+    width: 800px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+  }
+  .container-quienes-historia_tres-foto_tres {
+    width: 400px !important;
+  }
+  .container-quienes-historia_tres-parrafo {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    width: 300px !important;
+    height: 200px;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 1023px) and (max-width: 2000px) {
@@ -856,49 +1039,53 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1800px !important;
+    min-width: 100% !important;
   }
-  .container-mapa_tienda {
+  .container-cont_ofertas-titles-mapa_tienda {
     display: flex;
-    flex-direction: row;
-    width: 1000px !important;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
   }
-  .container-mapa_tienda-iframe_mapa {
+  .container-cont_ofertas-titles-mapa_tienda-iframe_mapa {
     width: 400px !important;
     height: 250px;
     margin-right: 20px;
   }
-  .container-mapa_tienda-title_mapa {
+  .container-cont_ofertas-titles-mapa_tienda-title_mapa {
     padding-top: 50px !important;
-    width: 600px;
-    color: black;
-    background-color: bisque;
+    width: 400px;
+    color: rgb(255, 255, 255);
   }
-  .container-productos_oferta {
+  .container-cont_ofertas-productos_oferta {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center !important;
     align-items: center !important;
-    flex-direction: row;
-    flex-wrap: wrap;
     margin-bottom: 20px;
   }
-  .container-productos_oferta-ropa_oferta {
+  .container-cont_ofertas-productos_oferta-ropa_oferta {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
     margin-top: 20px;
     margin-right: 10px;
   }
-  .container-productos_oferta-ropa_oferta-cards {
+  .container-cont_ofertas-productos_oferta-ropa_oferta-cards {
     display: flex;
     flex-direction: row !important;
     height: 750px;
     border-radius: 10px !important;
     background-color: black !important;
   }
-  .container-productos_oferta-ropa_oferta-cards-imcard-card_oferta {
+  .container-cont_ofertas-productos_oferta-ropa_oferta-cards-imcard {
+    align-items: center;
+    justify-content: center;
+  }
+  .container-cont_ofertas-productos_oferta-ropa_oferta-cards-imcard-card_oferta {
     display: none;
   }
   .container {
@@ -1003,6 +1190,165 @@ footer {
     width: 400px;
     margin-bottom: 10px;
     margin-right: 10px;
+  }
+  /* .container{
+
+      display: flex;
+      flex-direction: column !important;
+      &-form{
+          display: flex;
+          flex-direction: column !important;
+          margin-top: 250px;
+          justify-content: center;
+          align-items: center;
+          &-formLogin{
+
+              display: flex;
+              flex-direction: column !important;
+              &-forms{
+                  display: flex;
+                  flex-direction: column !important;
+                  width: 900px;
+                  &-login{
+                      display: flex;
+                      flex-direction: row !important;
+                      justify-content: center;
+                      align-items: center;
+                      background-color: blue;
+                      width: 200px;
+                      height: 500px;
+                      &-form{
+                          display: flex;
+                          justify-content: center;
+                          align-items: center;
+                      }
+                  }
+              }
+          }
+      }
+  }*/
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .container-form {
+    margin-top: 220px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-form-formLogin-forms {
+    width: 400px;
+  }
+  .container-form-formLogin-forms-login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-form-formLogin-forms-login-form-regis {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-form-formLogin-forms-login-form-regis-form_group {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .container-form-formLogin-forms-login-form-regis-form_group-label {
+    font-weight: bold;
+  }
+  .container-form-formLogin-forms-login-form-botonLogin-login {
+    float: right;
+  }
+  .container-form-formLogin-forms-login-form-botonLogin-login :hover {
+    background-color: rgb(24, 23, 23) !important;
+  }
+  .container-form-formLogin-forms-login-form-boton-registrar {
+    text-decoration: none !important;
+    color: black;
+    font-weight: bold;
+    float: right;
+  }
+  .container-form-formLogin-forms-login-form-boton-registrar:hover {
+    color: rgb(32, 31, 31);
+  }
+  #foto_historia {
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+  }
+  #foto_historia_calle {
+    width: 100% !important;
+    height: 300px !important;
+    border-radius: 10px;
+  }
+  #foto_historia_colpatria {
+    width: 100% !important;
+    height: 600px !important;
+    border-radius: 10px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px !important;
+  }
+  .container-quienes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .container-quienes-title {
+    color: rgb(252, 252, 252);
+  }
+  .container-quienes-historia {
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-quienes-historia-foto {
+    width: 400px !important;
+  }
+  .container-quienes-historia-parrafo {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    width: 400px !important;
+    height: 200px;
+    padding: 20px;
+  }
+  .container-quienes-historia_dos {
+    margin-top: 20px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-quienes-historia_dos-foto_dos {
+    width: 400px !important;
+  }
+  .container-quienes-historia_dos-parrafo {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    width: 400px !important;
+    height: 200px;
+    padding: 20px;
+  }
+  .container-quienes-historia_tres {
+    margin-top: 20px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+  }
+  .container-quienes-historia_tres-foto_tres {
+    width: 400px !important;
+  }
+  .container-quienes-historia_tres-parrafo {
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    width: 400px !important;
+    height: 200px;
+    padding: 20px;
   }
 }
 
