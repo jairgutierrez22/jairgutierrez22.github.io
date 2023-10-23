@@ -70,20 +70,29 @@
                 </div>
                 <div class="container-producto_compra-selects">
                     <div class="container-producto_compra-selects-producto_talla">
-                        <select class="form-select" id="list_talla"></select>
+                          <select class="form-select">
+                            <option value="">Seleccione la talla</option>
+                            <option value="Talla S">Talla S</option>
+                            <option value="Talla M">Talla M</option>
+                            <option value="Talla L">Talla L</option>
+                        </select>
                     </div>
                     <div class="container-producto_compra-selects-producto_talla">
-                        <select class="form-select" id="list_color">
+                        <select class="form-select">
+                            <option value="">Seleccione la color</option>
+                            <option value="color rojo">Color: rojo</option>
+                            <option value="color azul">Color: azul</option>
+                            <option value="color blanco">Color: Blanco</option>
+                            <option value="color cafe">Color: Café</option>
                         </select>
                     </div>
                 </div>
                 <div class="container-producto_compra-botones">
                     <div class="container-producto_compra-botones-boton_carrito">
-                        <button type="button" class="btn btn-dark" id="btn_carrito" onclick="carrito();">Añadir al carrito</button>
+                        <button type="button" class="btn btn-dark" id="btn_carrito">Añadir al carrito</button>
                     </div>
                     <div class="container-producto_compra-botones-boton_comprar">
-                        <a class="btn btn-success link" id="btn_comprar" onclick="comprar();">Comprar</a>
-                        <!--<a href="oagCinco.html" id="boton_comprar">Comprar</a>-->
+                        <a class="btn btn-success link" id="btn_comprar">Comprar</a>
                     </div>
                 </div>
             </div>
