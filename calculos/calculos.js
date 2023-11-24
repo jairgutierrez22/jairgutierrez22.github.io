@@ -162,3 +162,6 @@ if(edad_user >= 18){
     alert("Lo sentimos, no podrás realizar compras por el momento.");
 }
 
+
+
+
