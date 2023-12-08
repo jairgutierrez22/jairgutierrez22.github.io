@@ -29,6 +29,30 @@
                             <a class="nav-link" href="../ropa-accesorios/ropa.html">Ropa</a>
                         </li>
                         <li class="nav-item">
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Launch demo modal
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Productos Agregados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div id="productsAgregados"></div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> se usará para el apartado de compra-->
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="../ropa-accesorios/accesorios.html">Accesorios</a>
                         </li>
                         <li class="nav-item">
@@ -46,6 +70,7 @@
           </nav>
     </header>
     <main>
+        
         <div class="container">
             <div class="container-cont_accesorios">
                 <div class="container-cont_accesorios-titulo">
@@ -53,77 +78,16 @@
                     <h2>Accesorios</h2>
                 </div>
                 <div class="container-cont_accesorios-group">
-                    <div class="card container-cont_accesorios-group-cards">
-                        <img src="../accesorios/1.jpeg" class="card-img-top" id="fotos_accesorios" alt="Imagen referencia para accesorios de gimnasio">
-                        <div class="card-body">
-                            <h5 class="card-title cardtitle">Accesorios de gimnasio</h5>
-                            <p class="card-text parrafo_cards">Para que entrenes con los mejores productos del mercado a nivel nacional.</p><br>
-                            <p class="card-text"><small class="text-muted">Producto agregado hace 7 minutos</small></p>
-                        </div>
-                    </div>
+                    <div id="productos-container"  >
 
-
-                    
-                    <div class="card container-cont_accesorios-group-cards">
-                        <img src="../accesorios/2.jpeg" class="card-img-top" id="fotos_accesorios" alt="Imagen referencia para accesorios de gimnasio">
-                        <div class="card-body">
-                            <h5 class="card-title cardtitle">Mancuernas</h5>
-                            <p class="card-text parrafo_cards">Las mejores mancuernas para iniciar en el mundo fitness.</p><br>
-                            <p class="card-text"><small class="text-muted">Producto agregado hace 13 minutos</small></p>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card container-cont_accesorios-group-cards">
-                        <img src="../accesorios/ciclismo.jpg" class="card-img-top" id="fotos_accesorios" alt="Imagen referencia para accesorios de ciclismo">
-                        <div class="card-body">
-                            <h5 class="card-title cardtitle">Ciclismo</h5>
-                            <p class="card-text parrafo_cards">En nuestra tienda virtual, tenemos los precios para que puedas realiza ciclismo de ruta y de montaña como un pro.</p>
-                            <p class="card-text"><small class="text-muted">Producto agregado hace 15 minutos</small></p>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card container-cont_accesorios-group-cards">
-                        <img src="../img/barras.jpg" class="card-img-top" id="fotos_accesorios" alt="Imagen referencia para accesorios de dominadas en barra">
-                        <div class="card-body">
-                            <h5 class="card-title cardtitle">Calistenia</h5>
-                            <p class="card-text parrafo_cards">Para los más intrépidos, para los más arriesgados, los mejores productos para que inicies en el mundo de la calistenia.</p>
-                            <p class="card-text"><small class="text-muted">Producto agregado hace 18 minutos</small></p>
-                        </div>
-                    </div>
-
-
-                    
-                    <div class="card container-cont_accesorios-group-cards">
-                        <img src="../img/laso gimansio.jpg" class="card-img-top" id="fotos_accesorios" alt="Imagen referencia para accesorios de laso para hacer calistenia">
-                        <div class="card-body">
-                            <h5 class="card-title cardtitle">Gimnasio</h5>
-                            <p class="card-text parrafo_cards">
-                                Si quieres tenr los mejores los accesorios para realizar tus ejercicios en el gimnasio o en casa, acá tenemos los mejores productos para ti.
-                            </p>
-                            <p class="card-text"><small class="text-muted">Producto agregado hace 20 minutos</small></p>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card container-cont_accesorios-group-cards">
-                        <img src="../img/pelota gimnasio.jpg" class="card-img-top" id="fotos_accesorios" alt="Imagen referencia para accesorios de para realizar yoga">
-                        <div class="card-body">
-                            <h5 class="card-title cardtitle">Yoga</h5>
-                            <p class="card-text parrafo_cards">
-                                A veces es necesario que para que tus ejercicios de yoga sean plenos, debes tener los mejores accesorios. 
-                            </p>
-                            <p class="card-text"><small class="text-muted">Producto agregado hace 25 minutos</small></p>
-                        </div>
                     </div>
                 </div>
-
-            
-            </div>
         </div>
     </main>
     <footer>Sitio web creado por Jair Gutiérrez Sánchez. Bogotá, Colombia.</footer>
+    
+    <!-- <script src="../js/script.js"></script> -->
+    <script src="../js/prod.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>

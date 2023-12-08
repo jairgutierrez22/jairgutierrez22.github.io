@@ -1,59 +1,5 @@
 [
     {
-        "id_producto": 1,
-        "nombre_prod": "Accesorios de gimnasio",
-        "descripcion_prod": "Para que entrenes con los mejores productos del mercado a nivel nacional.",
-        "precio_prod": "",
-        "categoria_prod": "Accesorios",
-        "descuento_prod": true,
-        "url_img_prod": "1.jpeg"
-    },
-    {
-        "id_producto": 2,
-        "nombre_prod": "Mancuernas",
-        "descripcion_prod": "Las mejores mancuernas para iniciar en el mundo fitness.",
-        "precio_prod": "",
-        "categoria_prod": "Accesorios",
-        "descuento_prod": true,
-        "url_img_prod": "2.jpeg"
-    },
-    {
-        "id_producto": 3,
-        "nombre_prod": "Ciclismo",
-        "descripcion_prod": "En nuestra tienda virtual, tenemos los precios para que puedas realiza ciclismo de ruta y de montaña como un pro.",
-        "precio_prod": "",
-        "categoria_prod": "Accesorios",
-        "descuento_prod": true,
-        "url_img_prod": "ciclismo.jpg"
-    },
-    {
-        "id_producto": 4,
-        "nombre_prod": "Calistenia",
-        "descripcion_prod": "Para los más intrépidos, para los más arriesgados, los mejores productos para que inicies en el mundo de la calistenia.",
-        "precio_prod": "",
-        "categoria_prod": "Accesorios",
-        "descuento_prod": true,
-        "url_img_prod": "barras.jpg"
-    },
-    {
-        "id_producto": 5,
-        "nombre_prod": "Gimnasio",
-        "descripcion_prod": "Si quieres tenr los mejores los accesorios para realizar tus ejercicios en el gimnasio o en casa, acá tenemos los mejores productos para ti.",
-        "precio_prod": "",
-        "categoria_prod": "Accesorios",
-        "descuento_prod": true,
-        "url_img_prod": "laso gimansio.jpg"
-    },
-    {
-        "id_producto": 6,
-        "nombre_prod": "Yoga",
-        "descripcion_prod": "A veces es necesario que para que tus ejercicios de yoga sean plenos, debes tener los mejores accesorios.",
-        "precio_prod": "",
-        "categoria_prod": "Accesorios",
-        "descuento_prod": true,
-        "url_img_prod": "pelota gimnasio.jpg"
-    },
- {
         "id_producto": 7,
         "nombre_prod": "",
         "descripcion_prod": "",
@@ -495,5 +441,3 @@
         "url_img_prod": ".jpg"
     }
 ]
-    
-   
