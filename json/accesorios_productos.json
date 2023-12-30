@@ -58,6 +58,95 @@
         "descuento_prod": true,
         "url_img_prod": "../img/pelota gimnasio.jpg",
         "cantidad_produc": "0"
+    },{
+        "id_producto": 7,
+        "nombre_prod": "Ropa Deportiva para Niñas",
+        "descripcion_prod": "Para que tu hija empiece a entrenar contigo",
+        "precio_prod": "100.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": true,
+        "url_img_prod": "../img/ropa deportiva/pexels-photo-7201152.jpeg",
+        "cantidad_produc": "5"
+    },
+    {
+        "id_producto": 8,
+        "nombre_prod": "Ropa para que estilees siempre",
+        "descripcion_prod": "La mejor Ropa para que estilees siempre",
+        "precio_prod": "15.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": false,
+        "url_img_prod": "../img/ropa deportiva/pexels-photo-4925894.jpeg",
+        "cantidad_produc": "20"
+    },
+    {
+        "id_producto": 9,
+        "nombre_prod": "Chaqueta OVersize",
+        "descripcion_prod": "Llega con el mejor estilo a cualquier sitio",
+        "precio_prod": "10.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": true,
+        "url_img_prod": "../img/ropa deportiva/pexels-photo-9852581.webp",
+        "cantidad_produc": "20"
+    },
+    {
+        "id_producto": 10,
+        "nombre_prod": "Ropa tenis",
+        "descripcion_prod": "La mejor indumentaria para jugar tenis como un pro",
+        "precio_prod": "51.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": true,
+        "url_img_prod": "../img/ropa deportiva/tenis.jpeg",
+        "cantidad_produc": "10"
+    },
+    {
+        "id_producto": 11,
+        "nombre_prod": "Licra para entrenar",
+        "descripcion_prod": "Lo mejor para runnin",
+        "precio_prod": "51.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": true,
+        "url_img_prod": "../img/ropa deportiva/pexels-photo-11001128.webp",
+        "cantidad_produc": "30"
+    },
+    {
+        "id_producto": 12,
+        "nombre_prod": "Indumentaria para VolleyBall",
+        "descripcion_prod": "Entrena tranquilo con tu ropa para Volley",
+        "precio_prod": "61.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": true,
+        "url_img_prod": "../img/ropa deportiva/volley.webp",
+        "cantidad_produc": "6"
+    },
+    {
+        "id_producto": 13,
+        "nombre_prod": "Indumentaria para Fútbol Américano",
+        "descripcion_prod": "Si te gusta el superbowl, te gustará la ropa original de la NFL",
+        "precio_prod": "89.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": false,
+        "url_img_prod": "../img/foto 3.jpg",
+        "cantidad_produc": "6"
+    },
+    {
+        "id_producto": 14,
+        "nombre_prod": "Ropa para Squash",
+        "descripcion_prod": "Ropa para básica para jugar squas tranquilito",
+        "precio_prod": "236.000",
+        "categoria_prod": "Ropa",
+        "descuento_prod": true,
+        "url_img_prod": "../img/tenis.webp",
+        "cantidad_produc": "2"
+    },
+    {
+        "id_producto": 15,
+        "nombre_prod": "Ropa cómoda para Skater",
+        "descripcion_prod": "Las mejores prendas para vestir como tu skater favorito",
+        "precio_prod": "45.200",
+        "categoria_prod": "Ropa",
+        "descuento_prod": false,
+        "url_img_prod": "../img/ropa deportiva/skate.jpeg",
+        "cantidad_produc": "20"
     }
 ]
     

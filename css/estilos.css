@@ -1185,11 +1185,14 @@ footer {
     flex-wrap: wrap;
     flex-direction: row !important;
     width: 1100px !important;
-    background-color: rgb(95, 65, 65);
+    background-color: rgb(0, 0, 0);
     justify-content: center;
     align-items: center;
   }
   .container-cont_accesorios-group-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 400px;
     margin-bottom: 10px;
     margin-right: 10px;
